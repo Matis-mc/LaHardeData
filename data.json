@@ -1569,7 +1569,7 @@
     },
     "S3": {
       "id": "S3",
-      "nom": "Les Esses",
+      "nom": "La Chappelle",
       "longueur_km": 0.103,
       "meilleur_equipe": {
         "coureur_id": "coureur_3",
@@ -1766,7 +1766,7 @@
     },
     "S4": {
       "id": "S4",
-      "nom": "Garage Vert",
+      "nom": "Partie Rapide",
       "longueur_km": 0.149,
       "meilleur_equipe": {
         "coureur_id": "coureur_3",
@@ -2160,7 +2160,7 @@
     },
     "S6": {
       "id": "S6",
-      "nom": "Chicane Playstation",
+      "nom": "Les S du Bugatti",
       "longueur_km": 0.115,
       "meilleur_equipe": {
         "coureur_id": "coureur_3",
