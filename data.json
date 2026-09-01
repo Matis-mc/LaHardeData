@@ -1,0 +1,2753 @@
+{
+  "equipe": {
+    "nom": "La Harde",
+    "temps_total": "24:04:01",
+    "tours_total": 182,
+    "km_total": 761.67,
+    "longueur_circuit_km": 4.23,
+    "tours_par_heure": [
+      {
+        "heure": 0,
+        "tours": 6
+      },
+      {
+        "heure": 1,
+        "tours": 6
+      },
+      {
+        "heure": 2,
+        "tours": 9
+      },
+      {
+        "heure": 3,
+        "tours": 7
+      },
+      {
+        "heure": 4,
+        "tours": 7
+      },
+      {
+        "heure": 5,
+        "tours": 8
+      },
+      {
+        "heure": 6,
+        "tours": 9
+      },
+      {
+        "heure": 7,
+        "tours": 7
+      },
+      {
+        "heure": 8,
+        "tours": 6
+      },
+      {
+        "heure": 9,
+        "tours": 9
+      },
+      {
+        "heure": 10,
+        "tours": 7
+      },
+      {
+        "heure": 11,
+        "tours": 7
+      },
+      {
+        "heure": 12,
+        "tours": 8
+      },
+      {
+        "heure": 13,
+        "tours": 9
+      },
+      {
+        "heure": 14,
+        "tours": 7
+      },
+      {
+        "heure": 15,
+        "tours": 6
+      },
+      {
+        "heure": 16,
+        "tours": 9
+      },
+      {
+        "heure": 17,
+        "tours": 7
+      },
+      {
+        "heure": 18,
+        "tours": 7
+      },
+      {
+        "heure": 19,
+        "tours": 8
+      },
+      {
+        "heure": 20,
+        "tours": 9
+      },
+      {
+        "heure": 21,
+        "tours": 8
+      },
+      {
+        "heure": 22,
+        "tours": 7
+      },
+      {
+        "heure": 23,
+        "tours": 9
+      }
+    ]
+  },
+  "coureurs": [
+    {
+      "id": "coureur_1",
+      "prenom": "Pierre",
+      "nom": "Bousin",
+      "temps_total": "02:57:29",
+      "tours_total": 22,
+      "km_total": 92.4,
+      "relais": [
+        {
+          "numero": 1,
+          "tours": 7,
+          "meilleurs_segments": [
+            {
+              "segment_id": "S3",
+              "temps": "00:11.550"
+            },
+            {
+              "segment_id": "S6",
+              "temps": "00:11.763"
+            }
+          ],
+          "temps_moyen_tour": "08:56.00"
+        },
+        {
+          "numero": 8,
+          "tours": 7,
+          "meilleurs_segments": [
+            {
+              "segment_id": "S3",
+              "temps": "00:11.563"
+            },
+            {
+              "segment_id": "S6",
+              "temps": "00:11.786"
+            }
+          ],
+          "temps_moyen_tour": "07:52.00"
+        },
+        {
+          "numero": 15,
+          "tours": 8,
+          "meilleurs_segments": [
+            {
+              "segment_id": "S3",
+              "temps": "00:11.726"
+            },
+            {
+              "segment_id": "S6",
+              "temps": "00:11.893"
+            }
+          ],
+          "temps_moyen_tour": "08:00.00"
+        }
+      ],
+      "temps_au_tour": [
+        {
+          "tour": 1,
+          "temps": "11:51:00"
+        },
+        {
+          "tour": 2,
+          "temps": "8:14:00"
+        },
+        {
+          "tour": 3,
+          "temps": "8:15:00"
+        },
+        {
+          "tour": 4,
+          "temps": "8:29:00"
+        },
+        {
+          "tour": 5,
+          "temps": "8:44:00"
+        },
+        {
+          "tour": 6,
+          "temps": "8:03:00"
+        },
+        {
+          "tour": 7,
+          "temps": "09:28:00"
+        },
+        {
+          "tour": 8,
+          "temps": "07:48"
+        },
+        {
+          "tour": 9,
+          "temps": "07:49"
+        },
+        {
+          "tour": 10,
+          "temps": "07:56"
+        },
+        {
+          "tour": 11,
+          "temps": "08:02"
+        },
+        {
+          "tour": 12,
+          "temps": "07:56"
+        },
+        {
+          "tour": 13,
+          "temps": "07:42"
+        },
+        {
+          "tour": 14,
+          "temps": "08:44"
+        },
+        {
+          "tour": 15,
+          "temps": "08:15"
+        },
+        {
+          "tour": 16,
+          "temps": "07:55"
+        },
+        {
+          "tour": 17,
+          "temps": "08:01"
+        },
+        {
+          "tour": 18,
+          "temps": "07:59"
+        },
+        {
+          "tour": 19,
+          "temps": "08:04"
+        },
+        {
+          "tour": 20,
+          "temps": "07:48"
+        },
+        {
+          "tour": 21,
+          "temps": "07:51"
+        },
+        {
+          "tour": 22,
+          "temps": "08:59"
+        }
+      ]
+    },
+    {
+      "id": "coureur_2",
+      "prenom": "Yoran",
+      "nom": "Maulny",
+      "temps_total": "02:57:27",
+      "tours_total": 18,
+      "km_total": 75.6,
+      "relais": [
+        {
+          "numero": 2,
+          "tours": 6,
+          "meilleurs_segments": [
+            {
+              "segment_id": "S3",
+              "temps": "00:12.475"
+            },
+            {
+              "segment_id": "S2",
+              "temps": "00:13.326"
+            }
+          ],
+          "temps_moyen_tour": "09:32.868"
+        },
+        {
+          "numero": 9,
+          "tours": 6,
+          "meilleurs_segments": [
+            {
+              "segment_id": "S3",
+              "temps": "00:12.001"
+            },
+            {
+              "segment_id": "S2",
+              "temps": "00:12.877"
+            }
+          ],
+          "temps_moyen_tour": "09:49.878"
+        },
+        {
+          "numero": 16,
+          "tours": 6,
+          "meilleurs_segments": [
+            {
+              "segment_id": "S3",
+              "temps": "00:12.081"
+            },
+            {
+              "segment_id": "S2",
+              "temps": "00:12.756"
+            }
+          ],
+          "temps_moyen_tour": "09:49.00"
+        }
+      ],
+      "temps_au_tour": [
+        {
+          "tour": 1,
+          "temps": "08:45"
+        },
+        {
+          "tour": 2,
+          "temps": "09:26"
+        },
+        {
+          "tour": 3,
+          "temps": "09:27"
+        },
+        {
+          "tour": 4,
+          "temps": "09:51"
+        },
+        {
+          "tour": 5,
+          "temps": "10:12"
+        },
+        {
+          "tour": 6,
+          "temps": "10:38"
+        },
+        {
+          "tour": 7,
+          "temps": "09:26"
+        },
+        {
+          "tour": 8,
+          "temps": "09:06"
+        },
+        {
+          "tour": 9,
+          "temps": "09:33"
+        },
+        {
+          "tour": 10,
+          "temps": "10:15"
+        },
+        {
+          "tour": 11,
+          "temps": "10:47"
+        },
+        {
+          "tour": 12,
+          "temps": "10:58"
+        },
+        {
+          "tour": 13,
+          "temps": "10:06"
+        },
+        {
+          "tour": 14,
+          "temps": "09:31"
+        },
+        {
+          "tour": 15,
+          "temps": "10:03"
+        },
+        {
+          "tour": 16,
+          "temps": "09:35"
+        },
+        {
+          "tour": 17,
+          "temps": "09:53"
+        },
+        {
+          "tour": 18,
+          "temps": "09:58"
+        }
+      ]
+    },
+    {
+      "id": "coureur_3",
+      "prenom": "Matis",
+      "nom": "Charrier",
+      "temps_total": "04:06:05",
+      "tours_total": 36,
+      "km_total": 151.2,
+      "relais": [
+        {
+          "numero": 3,
+          "tours": 8,
+          "meilleurs_segments": [
+            {
+              "segment_id": "S3",
+              "temps": "00:10.972"
+            },
+            {
+              "segment_id": "S6",
+              "temps": "07:03.000"
+            }
+          ],
+          "temps_moyen_tour": "07:03.000"
+        },
+        {
+          "numero": 10,
+          "tours": 9,
+          "meilleurs_segments": [
+            {
+              "segment_id": "S3",
+              "temps": "00:10.702"
+            },
+            {
+              "segment_id": "S6",
+              "temps": "00:11.898"
+            }
+          ],
+          "temps_moyen_tour": "06:38.000"
+        },
+        {
+          "numero": 17,
+          "tours": 9,
+          "meilleurs_segments": [
+            {
+              "segment_id": "S3",
+              "temps": "00:10.516"
+            },
+            {
+              "segment_id": "S6",
+              "temps": "06:11.676"
+            }
+          ],
+          "temps_moyen_tour": "06:48.000"
+        },
+        {
+          "numero": 22,
+          "tours": 10,
+          "meilleurs_segments": [
+            {
+              "segment_id": "S3",
+              "temps": "00:10.516"
+            },
+            {
+              "segment_id": "S6",
+              "temps": "06:11.676"
+            }
+          ],
+          "temps_moyen_tour": "07:03.000"
+        }
+      ],
+      "temps_au_tour": [
+        {
+          "tour": 1,
+          "temps": "06:51"
+        },
+        {
+          "tour": 2,
+          "temps": "06:47"
+        },
+        {
+          "tour": 3,
+          "temps": "07:02"
+        },
+        {
+          "tour": 4,
+          "temps": "06:41"
+        },
+        {
+          "tour": 5,
+          "temps": "07:32"
+        },
+        {
+          "tour": 6,
+          "temps": "07:28"
+        },
+        {
+          "tour": 7,
+          "temps": "07:14"
+        },
+        {
+          "tour": 8,
+          "temps": "08:34"
+        },
+        {
+          "tour": 9,
+          "temps": "06:48"
+        },
+        {
+          "tour": 10,
+          "temps": "06:17"
+        },
+        {
+          "tour": 11,
+          "temps": "06:46"
+        },
+        {
+          "tour": 12,
+          "temps": "06:38"
+        },
+        {
+          "tour": 13,
+          "temps": "06:30"
+        },
+        {
+          "tour": 14,
+          "temps": "06:52"
+        },
+        {
+          "tour": 15,
+          "temps": "06:36"
+        },
+        {
+          "tour": 16,
+          "temps": "06:32"
+        },
+        {
+          "tour": 17,
+          "temps": "08:21"
+        },
+        {
+          "tour": 18,
+          "temps": "06:58"
+        },
+        {
+          "tour": 19,
+          "temps": "06:31"
+        },
+        {
+          "tour": 20,
+          "temps": "06:38"
+        },
+        {
+          "tour": 21,
+          "temps": "06:45"
+        },
+        {
+          "tour": 22,
+          "temps": "06:55"
+        },
+        {
+          "tour": 23,
+          "temps": "07:01"
+        },
+        {
+          "tour": 24,
+          "temps": "06:26"
+        },
+        {
+          "tour": 25,
+          "temps": "06:48"
+        },
+        {
+          "tour": 26,
+          "temps": "07:55"
+        },
+        {
+          "tour": 27,
+          "temps": "07:05"
+        },
+        {
+          "tour": 28,
+          "temps": "06:48"
+        },
+        {
+          "tour": 29,
+          "temps": "06:54"
+        },
+        {
+          "tour": 30,
+          "temps": "07:11"
+        },
+        {
+          "tour": 31,
+          "temps": "07:06"
+        },
+        {
+          "tour": 32,
+          "temps": "07:16"
+        },
+        {
+          "tour": 33,
+          "temps": "06:50"
+        },
+        {
+          "tour": 34,
+          "temps": "07:40"
+        },
+        {
+          "tour": 35,
+          "temps": "07:05"
+        },
+        {
+          "tour": 36,
+          "temps": "08:45"
+        }
+      ]
+    },
+    {
+      "id": "coureur_4",
+      "prenom": "Corentin",
+      "nom": "Bouchet",
+      "temps_total": "02:53:02",
+      "tours_total": 20,
+      "km_total": 84.0,
+      "relais": [
+        {
+          "numero": 4,
+          "tours": 7,
+          "meilleurs_segments": [
+            {
+              "segment_id": "S3",
+              "temps": "00:12.856"
+            },
+            {
+              "segment_id": "S2",
+              "temps": "00:14.037"
+            }
+          ],
+          "temps_moyen_tour": "08:18.200"
+        },
+        {
+          "numero": 11,
+          "tours": 6,
+          "meilleurs_segments": [
+            {
+              "segment_id": "S3",
+              "temps": "00:12.268"
+            },
+            {
+              "segment_id": "S2",
+              "temps": "08:47:120"
+            }
+          ],
+          "temps_moyen_tour": "08:47:120"
+        },
+        {
+          "numero": 18,
+          "tours": 7,
+          "meilleurs_segments": [
+            {
+              "segment_id": "S3",
+              "temps": "00:12.244"
+            },
+            {
+              "segment_id": "S2",
+              "temps": "00:13.217"
+            }
+          ],
+          "temps_moyen_tour": "08:33.00"
+        }
+      ],
+      "temps_au_tour": [
+        {
+          "tour": 1,
+"temps": "08:04"        },
+        {
+          "tour": 2,
+"temps": "08:00"        },
+        {
+          "tour": 3,
+"temps": "08:06"        },
+        {
+          "tour": 4,
+"temps": "08:20"        },
+        {
+          "tour": 5,
+"temps": "08:22"        },
+        {
+          "tour": 6,
+"temps": "08:58"        },
+        {
+          "tour": 7,
+"temps": "10:06"        },
+        {
+          "tour": 8,
+"temps": "08:33"        },
+        {
+          "tour": 9,
+"temps": "08:35"        },
+        {
+          "tour": 10,
+"temps": "08:58"        },
+        {
+          "tour": 11,
+"temps": "08:44"        },
+        {
+          "tour": 12,
+"temps": "09:06"        },
+        {
+          "tour": 13,
+"temps": "09:26"        },
+        {
+          "tour": 14,
+"temps": "08:17"        },
+        {
+          "tour": 15,
+"temps": "08:17"        },
+        {
+          "tour": 16,
+"temps": "08:46"        },
+        {
+          "tour": 17,
+"temps": "08:28"        },
+        {
+          "tour": 18,
+"temps": "08:42"        },
+        {
+          "tour": 19,
+"temps": "08:48"        },
+        {
+          "tour": 20,
+"temps": "09:01"        }
+      ]
+    },
+    {
+      "id": "coureur_5",
+      "prenom": "Baptiste",
+      "nom": "Jayle",
+      "temps_total": "03:07:40",
+      "tours_total": 23,
+      "km_total": 96.6,
+      "relais": [
+        {
+          "numero": 5,
+          "tours": 7,
+          "meilleurs_segments": [
+            {
+              "segment_id": "S3",
+              "temps": "00:11.897"
+            },
+            {
+              "segment_id": "S6",
+              "temps": "00:12.131"
+            }
+          ],
+          "temps_moyen_tour": "08:02.708"
+        },
+        {
+          "numero": 12,
+          "tours": 8,
+          "meilleurs_segments": [
+            {
+              "segment_id": "S3",
+              "temps": "00:11.899"
+            },
+            {
+              "segment_id": "S6",
+              "temps": "00:12.187"
+            }
+          ],
+          "temps_moyen_tour": "08:00.100"
+        },
+        {
+          "numero": 19,
+          "tours": 8,
+          "meilleurs_segments": [
+            {
+              "segment_id": "S3",
+              "temps": "00:11.899"
+            },
+            {
+              "segment_id": "S6",
+              "temps": "00:12.187"
+            }
+          ],
+          "temps_moyen_tour": "07:44.000"
+        }
+      ],
+      "temps_au_tour": [
+        {
+          "tour": 1,
+"temps": "07:28"        },
+        {
+          "tour": 2,
+"temps": "07:55"        },
+        {
+          "tour": 3,
+"temps": "08:37"        },
+        {
+          "tour": 4,
+"temps": "08:05"        },
+        {
+          "tour": 5,
+"temps": "07:36"        },
+        {
+          "tour": 6,
+"temps": "08:31"        },
+        {
+          "tour": 7,
+"temps": "09:09"        },
+        {
+          "tour": 8,
+"temps": "08:03"        },
+        {
+          "tour": 9,
+"temps": "07:39"        },
+        {
+          "tour": 10,
+"temps": "07:44"        },
+        {
+          "tour": 11,
+"temps": "08:11"        },
+        {
+          "tour": 12,
+"temps": "08:14"        },
+        {
+          "tour": 13,
+"temps": "08:10"        },
+        {
+          "tour": 14,
+"temps": "08:08"        },
+        {
+          "tour": 15,
+"temps": "10:14"        },
+        {
+          "tour": 16,
+"temps": "07:29"        },
+        {
+          "tour": 17,
+"temps": "07:09"        },
+        {
+          "tour": 18,
+"temps": "07:59"        },
+        {
+          "tour": 19,
+"temps": "07:49"        },
+        {
+          "tour": 20,
+"temps": "08:00"        },
+        {
+          "tour": 21,
+"temps": "07:58"        },
+        {
+          "tour": 22,
+"temps": "08:14"        },
+        {
+          "tour": 23,
+"temps": "09:15"        }
+      ]
+    },
+    {
+      "id": "coureur_6",
+      "prenom": "Baptiste",
+      "nom": "Bech",
+      "temps_total": "03:46:22",
+      "tours_total": 31,
+      "km_total": 130.2,
+      "relais": [
+        {
+          "numero": 6,
+          "tours": 8,
+          "meilleurs_segments": [
+            {
+              "segment_id": "S3",
+              "temps": "00:11.190"
+            },
+            {
+              "segment_id": "S2",
+              "temps": "00:12.490"
+            }
+          ],
+          "temps_moyen_tour": "07:36.000"
+        },
+        {
+          "numero": 13,
+          "tours": 8,
+          "meilleurs_segments": [
+            {
+              "segment_id": "S3",
+              "temps": "00:11.090"
+            },
+            {
+              "segment_id": "S2",
+              "temps": "00:12.411"
+            }
+          ],
+          "temps_moyen_tour": "07:19.000"
+        },
+        {
+          "numero": 20,
+          "tours": 7,
+          "meilleurs_segments": [
+            {
+              "segment_id": "S3",
+              "temps": "00:11.090"
+            },
+            {
+              "segment_id": "S2",
+              "temps": "00:12.411"
+            }
+          ],
+          "temps_moyen_tour": "07:09.500"
+        },
+        {
+          "numero": 23,
+          "tours": 7,
+          "meilleurs_segments": [
+            {
+              "segment_id": "S3",
+              "temps": "00:11.090"
+            },
+            {
+              "segment_id": "S2",
+              "temps": "00:12.411"
+            }
+          ],
+          "temps_moyen_tour": "08:04.500"
+        }
+      ],
+      "temps_au_tour": [
+        {
+          "tour": 1,
+"temps": "07:42"        },
+        {
+          "tour": 2,
+"temps": "07:32"        },
+        {
+          "tour": 3,
+"temps": "07:51"        },
+        {
+          "tour": 4,
+"temps": "07:31"        },
+        {
+          "tour": 5,
+"temps": "07:30"        },
+        {
+          "tour": 6,
+"temps": "07:34"        },
+        {
+          "tour": 7,
+"temps": "07:16"        },
+        {
+          "tour": 8,
+"temps": "08:27"        },
+        {
+          "tour": 9,
+"temps": "07:22"        },
+        {
+          "tour": 10,
+"temps": "07:04"        },
+        {
+          "tour": 11,
+"temps": "07:06"        },
+        {
+          "tour": 12,
+"temps": "07:32"        },
+        {
+          "tour": 13,
+"temps": "07:24"        },
+        {
+          "tour": 14,
+"temps": "07:28"        },
+        {
+          "tour": 15,
+"temps": "07:51"        },
+        {
+          "tour": 16,
+"temps": "08:28"        },
+        {
+          "tour": 17,
+"temps": "07:29"        },
+        {
+          "tour": 18,
+"temps": "07:20"        },
+        {
+          "tour": 19,
+"temps": "06:52"        },
+        {
+          "tour": 20,
+"temps": "06:56"        },
+        {
+          "tour": 21,
+"temps": "06:46"        },
+        {
+          "tour": 22,
+"temps": "07:36"        },
+        {
+          "tour": 23,
+"temps": "08:24"        },
+        {
+          "tour": 24,
+"temps": "07:37"        },
+        {
+          "tour": 25,
+"temps": "08:08"        },
+        {
+          "tour": 26,
+"temps": "08:08"        },
+        {
+          "tour": 27,
+"temps": "08:18"        },
+        {
+          "tour": 28,
+"temps": "07:54"        },
+        {
+          "tour": 29,
+"temps": "08:24"        },
+        {
+          "tour": 30,
+"temps": "09:08"        }
+      ]
+    },
+    {
+      "id": "coureur_7",
+      "prenom": "Quentin",
+      "nom": "Roulet",
+      "temps_total": "03:48:32",
+      "tours_total": 33,
+      "km_total": 138.6,
+      "relais": [
+        {
+          "numero": 7,
+          "tours": 10,
+          "meilleurs_segments": [
+            {
+              "segment_id": "S3",
+              "temps": "00:12.367"
+            },
+            {
+              "segment_id": "S6",
+              "temps": "00:13.847"
+            }
+          ],
+          "temps_moyen_tour": "06:41.500"
+        },
+        {
+          "numero": 14,
+          "tours": 8,
+          "meilleurs_segments": [
+            {
+              "segment_id": "S3",
+              "temps": "00:12.366"
+            },
+            {
+              "segment_id": "S6",
+              "temps": "00:13.800"
+            }
+          ],
+          "temps_moyen_tour": "06:34.300"
+        },
+        {
+          "numero": 21,
+          "tours": 9,
+          "meilleurs_segments": [
+            {
+              "segment_id": "S3",
+              "temps": "00:12.366"
+            },
+            {
+              "segment_id": "S6",
+              "temps": "00:13.800"
+            }
+          ],
+          "temps_moyen_tour": "06:52.000"
+        },
+        {
+          "numero": 24,
+          "tours": 6,
+          "meilleurs_segments": [
+            {
+              "segment_id": "S3",
+              "temps": "00:12.366"
+            },
+            {
+              "segment_id": "S6",
+              "temps": "00:13.800"
+            }
+          ],
+          "temps_moyen_tour": "07:40.000"
+        }
+      ],
+      "temps_au_tour": [
+        {
+          "tour": 1,
+"temps": "06:41"        },
+        {
+          "tour": 2,
+"temps": "06:16"        },
+        {
+          "tour": 3,
+"temps": "06:36"        },
+        {
+          "tour": 4,
+"temps": "06:58"        },
+        {
+          "tour": 5,
+"temps": "07:01"        },
+        {
+          "tour": 6,
+"temps": "06:39"        },
+        {
+          "tour": 7,
+"temps": "06:35"        },
+        {
+          "tour": 8,
+"temps": "06:52"        },
+        {
+          "tour": 9,
+"temps": "06:35"        },
+        {
+          "tour": 10,
+"temps": "07:46"        },
+        {
+          "tour": 11,
+"temps": "07:00"        },
+        {
+          "tour": 12,
+"temps": "06:29"        },
+        {
+          "tour": 13,
+"temps": "06:39"        },
+        {
+          "tour": 14,
+"temps": "06:17"        },
+        {
+          "tour": 15,
+"temps": "06:09"        },
+        {
+          "tour": 16,
+"temps": "06:53"        },
+        {
+          "tour": 17,
+"temps": "06:58"        },
+        {
+          "tour": 18,
+"temps": "08:32"        },
+        {
+          "tour": 19,
+"temps": "07:06"        },
+        {
+          "tour": 20,
+"temps": "06:27"        },
+        {
+          "tour": 21,
+"temps": "06:45"        },
+        {
+          "tour": 22,
+"temps": "06:54"        },
+        {
+          "tour": 23,
+"temps": "07:06"        },
+        {
+          "tour": 24,
+"temps": "06:55"        },
+        {
+          "tour": 25,
+"temps": "07:37"        },
+        {
+          "tour": 26,
+"temps": "08:27"        },
+        {
+          "tour": 27,
+"temps": "09:07"        },
+        {
+          "tour": 28,
+"temps": "07:39"        },
+        {
+          "tour": 29,
+"temps": "07:29"        },
+        {
+          "tour": 30,
+"temps": "07:35"        },
+        {
+          "tour": 31,
+"temps": "07:49"        },
+        {
+          "tour": 32,
+"temps": "07:48"        },
+        {
+          "tour": 33,
+"temps": "07:27"        }
+      ]
+    }
+  ],
+  "segments_stats": {
+    "S1": {
+      "id": "S1",
+      "nom": "Ligne des stands",
+      "longueur_km": 0.184,
+      "meilleur_equipe": {
+        "coureur_id": "coureur_3",
+        "coureur_nom": "Thomas Lefebvre",
+        "temps": "00:19.449",
+        "vitesse": 34.1
+      },
+      "moyenne_equipe": {
+        "temps": "00:20.652",
+        "vitesse": 32.1
+      },
+      "par_relais": {
+        "1": {
+          "coureur_id": "coureur_1",
+          "coureur_nom": "Julien Berthier",
+          "temps": "00:20.302",
+          "vitesse": 32.6
+        },
+        "2": {
+          "coureur_id": "coureur_2",
+          "coureur_nom": "Camille Roussel",
+          "temps": "00:20.927",
+          "vitesse": 31.7
+        },
+        "3": {
+          "coureur_id": "coureur_3",
+          "coureur_nom": "Thomas Lefebvre",
+          "temps": "00:20.440",
+          "vitesse": 32.4
+        },
+        "4": {
+          "coureur_id": "coureur_4",
+          "coureur_nom": "Manon Girard",
+          "temps": "00:22.762",
+          "vitesse": 29.1
+        },
+        "5": {
+          "coureur_id": "coureur_5",
+          "coureur_nom": "Antoine Petit",
+          "temps": "00:21.095",
+          "vitesse": 31.4
+        },
+        "6": {
+          "coureur_id": "coureur_6",
+          "coureur_nom": "Léa Fontaine",
+          "temps": "00:19.870",
+          "vitesse": 33.3
+        },
+        "7": {
+          "coureur_id": "coureur_7",
+          "coureur_nom": "Nicolas Marchand",
+          "temps": "00:21.034",
+          "vitesse": 31.5
+        },
+        "8": {
+          "coureur_id": "coureur_1",
+          "coureur_nom": "Julien Berthier",
+          "temps": "00:20.049",
+          "vitesse": 33.0
+        },
+        "9": {
+          "coureur_id": "coureur_2",
+          "coureur_nom": "Camille Roussel",
+          "temps": "00:20.116",
+          "vitesse": 32.9
+        },
+        "10": {
+          "coureur_id": "coureur_3",
+          "coureur_nom": "Thomas Lefebvre",
+          "temps": "00:19.802",
+          "vitesse": 33.5
+        },
+        "11": {
+          "coureur_id": "coureur_4",
+          "coureur_nom": "Manon Girard",
+          "temps": "00:21.756",
+          "vitesse": 30.4
+        },
+        "12": {
+          "coureur_id": "coureur_5",
+          "coureur_nom": "Antoine Petit",
+          "temps": "00:21.148",
+          "vitesse": 31.3
+        },
+        "13": {
+          "coureur_id": "coureur_6",
+          "coureur_nom": "Léa Fontaine",
+          "temps": "00:19.478",
+          "vitesse": 34.0
+        },
+        "14": {
+          "coureur_id": "coureur_7",
+          "coureur_nom": "Nicolas Marchand",
+          "temps": "00:21.073",
+          "vitesse": 31.4
+        },
+        "15": {
+          "coureur_id": "coureur_1",
+          "coureur_nom": "Julien Berthier",
+          "temps": "00:20.464",
+          "vitesse": 32.4
+        },
+        "16": {
+          "coureur_id": "coureur_2",
+          "coureur_nom": "Camille Roussel",
+          "temps": "00:20.148",
+          "vitesse": 32.9
+        },
+        "17": {
+          "coureur_id": "coureur_3",
+          "coureur_nom": "Thomas Lefebvre",
+          "temps": "00:19.449",
+          "vitesse": 34.1
+        },
+        "18": {
+          "coureur_id": "coureur_4",
+          "coureur_nom": "Manon Girard",
+          "temps": "00:21.817",
+          "vitesse": 30.4
+        }
+      },
+      "par_coureur": {
+        "coureur_1": {
+          "meilleur": {
+            "temps": "00:20.049",
+            "vitesse": 33.0
+          },
+          "moyenne": {
+            "temps": "00:20.272",
+            "vitesse": 32.7
+          }
+        },
+        "coureur_2": {
+          "meilleur": {
+            "temps": "00:20.116",
+            "vitesse": 32.9
+          },
+          "moyenne": {
+            "temps": "00:20.397",
+            "vitesse": 32.5
+          }
+        },
+        "coureur_3": {
+          "meilleur": {
+            "temps": "00:19.449",
+            "vitesse": 34.1
+          },
+          "moyenne": {
+            "temps": "00:19.897",
+            "vitesse": 33.3
+          }
+        },
+        "coureur_4": {
+          "meilleur": {
+            "temps": "00:21.756",
+            "vitesse": 30.4
+          },
+          "moyenne": {
+            "temps": "00:22.112",
+            "vitesse": 30.0
+          }
+        },
+        "coureur_5": {
+          "meilleur": {
+            "temps": "00:21.095",
+            "vitesse": 31.4
+          },
+          "moyenne": {
+            "temps": "00:21.121",
+            "vitesse": 31.4
+          }
+        },
+        "coureur_6": {
+          "meilleur": {
+            "temps": "00:19.478",
+            "vitesse": 34.0
+          },
+          "moyenne": {
+            "temps": "00:19.674",
+            "vitesse": 33.7
+          }
+        },
+        "coureur_7": {
+          "meilleur": {
+            "temps": "00:21.034",
+            "vitesse": 31.5
+          },
+          "moyenne": {
+            "temps": "00:21.053",
+            "vitesse": 31.5
+          }
+        }
+      }
+    },
+    "S2": {
+      "id": "S2",
+      "nom": "Virage Dunlop",
+      "longueur_km": 0.115,
+      "meilleur_equipe": {
+        "coureur_id": "coureur_3",
+        "coureur_nom": "Thomas Lefebvre",
+        "temps": "00:12.133",
+        "vitesse": 34.1
+      },
+      "moyenne_equipe": {
+        "temps": "00:12.964",
+        "vitesse": 31.9
+      },
+      "par_relais": {
+        "1": {
+          "coureur_id": "coureur_1",
+          "coureur_nom": "Julien Berthier",
+          "temps": "00:12.581",
+          "vitesse": 32.9
+        },
+        "2": {
+          "coureur_id": "coureur_2",
+          "coureur_nom": "Camille Roussel",
+          "temps": "00:13.326",
+          "vitesse": 31.1
+        },
+        "3": {
+          "coureur_id": "coureur_3",
+          "coureur_nom": "Thomas Lefebvre",
+          "temps": "00:12.636",
+          "vitesse": 32.8
+        },
+        "4": {
+          "coureur_id": "coureur_4",
+          "coureur_nom": "Manon Girard",
+          "temps": "00:14.037",
+          "vitesse": 29.5
+        },
+        "5": {
+          "coureur_id": "coureur_5",
+          "coureur_nom": "Antoine Petit",
+          "temps": "00:12.866",
+          "vitesse": 32.2
+        },
+        "6": {
+          "coureur_id": "coureur_6",
+          "coureur_nom": "Léa Fontaine",
+          "temps": "00:12.490",
+          "vitesse": 33.1
+        },
+        "7": {
+          "coureur_id": "coureur_7",
+          "coureur_nom": "Nicolas Marchand",
+          "temps": "00:14.105",
+          "vitesse": 29.4
+        },
+        "8": {
+          "coureur_id": "coureur_1",
+          "coureur_nom": "Julien Berthier",
+          "temps": "00:12.479",
+          "vitesse": 33.2
+        },
+        "9": {
+          "coureur_id": "coureur_2",
+          "coureur_nom": "Camille Roussel",
+          "temps": "00:12.877",
+          "vitesse": 32.1
+        },
+        "10": {
+          "coureur_id": "coureur_3",
+          "coureur_nom": "Thomas Lefebvre",
+          "temps": "00:12.293",
+          "vitesse": 33.7
+        },
+        "11": {
+          "coureur_id": "coureur_4",
+          "coureur_nom": "Manon Girard",
+          "temps": "00:13.335",
+          "vitesse": 31.0
+        },
+        "12": {
+          "coureur_id": "coureur_5",
+          "coureur_nom": "Antoine Petit",
+          "temps": "00:12.941",
+          "vitesse": 32.0
+        },
+        "13": {
+          "coureur_id": "coureur_6",
+          "coureur_nom": "Léa Fontaine",
+          "temps": "00:12.411",
+          "vitesse": 33.4
+        },
+        "14": {
+          "coureur_id": "coureur_7",
+          "coureur_nom": "Nicolas Marchand",
+          "temps": "00:14.125",
+          "vitesse": 29.3
+        },
+        "15": {
+          "coureur_id": "coureur_1",
+          "coureur_nom": "Julien Berthier",
+          "temps": "00:12.745",
+          "vitesse": 32.5
+        },
+        "16": {
+          "coureur_id": "coureur_2",
+          "coureur_nom": "Camille Roussel",
+          "temps": "00:12.756",
+          "vitesse": 32.5
+        },
+        "17": {
+          "coureur_id": "coureur_3",
+          "coureur_nom": "Thomas Lefebvre",
+          "temps": "00:12.133",
+          "vitesse": 34.1
+        },
+        "18": {
+          "coureur_id": "coureur_4",
+          "coureur_nom": "Manon Girard",
+          "temps": "00:13.217",
+          "vitesse": 31.3
+        }
+      },
+      "par_coureur": {
+        "coureur_1": {
+          "meilleur": {
+            "temps": "00:12.479",
+            "vitesse": 33.2
+          },
+          "moyenne": {
+            "temps": "00:12.602",
+            "vitesse": 32.9
+          }
+        },
+        "coureur_2": {
+          "meilleur": {
+            "temps": "00:12.756",
+            "vitesse": 32.5
+          },
+          "moyenne": {
+            "temps": "00:12.987",
+            "vitesse": 31.9
+          }
+        },
+        "coureur_3": {
+          "meilleur": {
+            "temps": "00:12.133",
+            "vitesse": 34.1
+          },
+          "moyenne": {
+            "temps": "00:12.354",
+            "vitesse": 33.5
+          }
+        },
+        "coureur_4": {
+          "meilleur": {
+            "temps": "00:13.217",
+            "vitesse": 31.3
+          },
+          "moyenne": {
+            "temps": "00:13.530",
+            "vitesse": 30.6
+          }
+        },
+        "coureur_5": {
+          "meilleur": {
+            "temps": "00:12.866",
+            "vitesse": 32.2
+          },
+          "moyenne": {
+            "temps": "00:12.903",
+            "vitesse": 32.1
+          }
+        },
+        "coureur_6": {
+          "meilleur": {
+            "temps": "00:12.411",
+            "vitesse": 33.4
+          },
+          "moyenne": {
+            "temps": "00:12.450",
+            "vitesse": 33.3
+          }
+        },
+        "coureur_7": {
+          "meilleur": {
+            "temps": "00:14.105",
+            "vitesse": 29.4
+          },
+          "moyenne": {
+            "temps": "00:14.115",
+            "vitesse": 29.3
+          }
+        }
+      }
+    },
+    "S3": {
+      "id": "S3",
+      "nom": "Les Esses",
+      "longueur_km": 0.103,
+      "meilleur_equipe": {
+        "coureur_id": "coureur_3",
+        "coureur_nom": "Thomas Lefebvre",
+        "temps": "00:10.516",
+        "vitesse": 35.4
+      },
+      "moyenne_equipe": {
+        "temps": "00:11.765",
+        "vitesse": 31.7
+      },
+      "par_relais": {
+        "1": {
+          "coureur_id": "coureur_1",
+          "coureur_nom": "Julien Berthier",
+          "temps": "00:11.550",
+          "vitesse": 32.3
+        },
+        "2": {
+          "coureur_id": "coureur_2",
+          "coureur_nom": "Camille Roussel",
+          "temps": "00:12.475",
+          "vitesse": 29.9
+        },
+        "3": {
+          "coureur_id": "coureur_3",
+          "coureur_nom": "Thomas Lefebvre",
+          "temps": "00:10.972",
+          "vitesse": 34.0
+        },
+        "4": {
+          "coureur_id": "coureur_4",
+          "coureur_nom": "Manon Girard",
+          "temps": "00:12.856",
+          "vitesse": 29.0
+        },
+        "5": {
+          "coureur_id": "coureur_5",
+          "coureur_nom": "Antoine Petit",
+          "temps": "00:11.897",
+          "vitesse": 31.3
+        },
+        "6": {
+          "coureur_id": "coureur_6",
+          "coureur_nom": "Léa Fontaine",
+          "temps": "00:11.190",
+          "vitesse": 33.3
+        },
+        "7": {
+          "coureur_id": "coureur_7",
+          "coureur_nom": "Nicolas Marchand",
+          "temps": "00:12.367",
+          "vitesse": 30.1
+        },
+        "8": {
+          "coureur_id": "coureur_1",
+          "coureur_nom": "Julien Berthier",
+          "temps": "00:11.563",
+          "vitesse": 32.2
+        },
+        "9": {
+          "coureur_id": "coureur_2",
+          "coureur_nom": "Camille Roussel",
+          "temps": "00:12.001",
+          "vitesse": 31.0
+        },
+        "10": {
+          "coureur_id": "coureur_3",
+          "coureur_nom": "Thomas Lefebvre",
+          "temps": "00:10.702",
+          "vitesse": 34.8
+        },
+        "11": {
+          "coureur_id": "coureur_4",
+          "coureur_nom": "Manon Girard",
+          "temps": "00:12.268",
+          "vitesse": 30.4
+        },
+        "12": {
+          "coureur_id": "coureur_5",
+          "coureur_nom": "Antoine Petit",
+          "temps": "00:11.899",
+          "vitesse": 31.3
+        },
+        "13": {
+          "coureur_id": "coureur_6",
+          "coureur_nom": "Léa Fontaine",
+          "temps": "00:11.090",
+          "vitesse": 33.6
+        },
+        "14": {
+          "coureur_id": "coureur_7",
+          "coureur_nom": "Nicolas Marchand",
+          "temps": "00:12.366",
+          "vitesse": 30.1
+        },
+        "15": {
+          "coureur_id": "coureur_1",
+          "coureur_nom": "Julien Berthier",
+          "temps": "00:11.726",
+          "vitesse": 31.8
+        },
+        "16": {
+          "coureur_id": "coureur_2",
+          "coureur_nom": "Camille Roussel",
+          "temps": "00:12.081",
+          "vitesse": 30.8
+        },
+        "17": {
+          "coureur_id": "coureur_3",
+          "coureur_nom": "Thomas Lefebvre",
+          "temps": "00:10.516",
+          "vitesse": 35.4
+        },
+        "18": {
+          "coureur_id": "coureur_4",
+          "coureur_nom": "Manon Girard",
+          "temps": "00:12.244",
+          "vitesse": 30.4
+        }
+      },
+      "par_coureur": {
+        "coureur_1": {
+          "meilleur": {
+            "temps": "00:11.550",
+            "vitesse": 32.3
+          },
+          "moyenne": {
+            "temps": "00:11.613",
+            "vitesse": 32.1
+          }
+        },
+        "coureur_2": {
+          "meilleur": {
+            "temps": "00:12.001",
+            "vitesse": 31.0
+          },
+          "moyenne": {
+            "temps": "00:12.186",
+            "vitesse": 30.6
+          }
+        },
+        "coureur_3": {
+          "meilleur": {
+            "temps": "00:10.516",
+            "vitesse": 35.4
+          },
+          "moyenne": {
+            "temps": "00:10.730",
+            "vitesse": 34.7
+          }
+        },
+        "coureur_4": {
+          "meilleur": {
+            "temps": "00:12.244",
+            "vitesse": 30.4
+          },
+          "moyenne": {
+            "temps": "00:12.456",
+            "vitesse": 29.9
+          }
+        },
+        "coureur_5": {
+          "meilleur": {
+            "temps": "00:11.897",
+            "vitesse": 31.3
+          },
+          "moyenne": {
+            "temps": "00:11.898",
+            "vitesse": 31.3
+          }
+        },
+        "coureur_6": {
+          "meilleur": {
+            "temps": "00:11.090",
+            "vitesse": 33.6
+          },
+          "moyenne": {
+            "temps": "00:11.140",
+            "vitesse": 33.4
+          }
+        },
+        "coureur_7": {
+          "meilleur": {
+            "temps": "00:12.366",
+            "vitesse": 30.1
+          },
+          "moyenne": {
+            "temps": "00:12.366",
+            "vitesse": 30.1
+          }
+        }
+      }
+    },
+    "S4": {
+      "id": "S4",
+      "nom": "Garage Vert",
+      "longueur_km": 0.149,
+      "meilleur_equipe": {
+        "coureur_id": "coureur_3",
+        "coureur_nom": "Thomas Lefebvre",
+        "temps": "00:14.863",
+        "vitesse": 36.2
+      },
+      "moyenne_equipe": {
+        "temps": "00:16.621",
+        "vitesse": 32.4
+      },
+      "par_relais": {
+        "1": {
+          "coureur_id": "coureur_1",
+          "coureur_nom": "Julien Berthier",
+          "temps": "00:15.422",
+          "vitesse": 34.9
+        },
+        "2": {
+          "coureur_id": "coureur_2",
+          "coureur_nom": "Camille Roussel",
+          "temps": "00:17.786",
+          "vitesse": 30.3
+        },
+        "3": {
+          "coureur_id": "coureur_3",
+          "coureur_nom": "Thomas Lefebvre",
+          "temps": "00:15.583",
+          "vitesse": 34.5
+        },
+        "4": {
+          "coureur_id": "coureur_4",
+          "coureur_nom": "Manon Girard",
+          "temps": "00:18.414",
+          "vitesse": 29.2
+        },
+        "5": {
+          "coureur_id": "coureur_5",
+          "coureur_nom": "Antoine Petit",
+          "temps": "00:16.646",
+          "vitesse": 32.3
+        },
+        "6": {
+          "coureur_id": "coureur_6",
+          "coureur_nom": "Léa Fontaine",
+          "temps": "00:16.367",
+          "vitesse": 32.9
+        },
+        "7": {
+          "coureur_id": "coureur_7",
+          "coureur_nom": "Nicolas Marchand",
+          "temps": "00:17.785",
+          "vitesse": 30.3
+        },
+        "8": {
+          "coureur_id": "coureur_1",
+          "coureur_nom": "Julien Berthier",
+          "temps": "00:15.353",
+          "vitesse": 35.1
+        },
+        "9": {
+          "coureur_id": "coureur_2",
+          "coureur_nom": "Camille Roussel",
+          "temps": "00:17.243",
+          "vitesse": 31.2
+        },
+        "10": {
+          "coureur_id": "coureur_3",
+          "coureur_nom": "Thomas Lefebvre",
+          "temps": "00:15.120",
+          "vitesse": 35.6
+        },
+        "11": {
+          "coureur_id": "coureur_4",
+          "coureur_nom": "Manon Girard",
+          "temps": "00:17.519",
+          "vitesse": 30.7
+        },
+        "12": {
+          "coureur_id": "coureur_5",
+          "coureur_nom": "Antoine Petit",
+          "temps": "00:16.714",
+          "vitesse": 32.2
+        },
+        "13": {
+          "coureur_id": "coureur_6",
+          "coureur_nom": "Léa Fontaine",
+          "temps": "00:16.293",
+          "vitesse": 33.0
+        },
+        "14": {
+          "coureur_id": "coureur_7",
+          "coureur_nom": "Nicolas Marchand",
+          "temps": "00:17.668",
+          "vitesse": 30.5
+        },
+        "15": {
+          "coureur_id": "coureur_1",
+          "coureur_nom": "Julien Berthier",
+          "temps": "00:15.652",
+          "vitesse": 34.4
+        },
+        "16": {
+          "coureur_id": "coureur_2",
+          "coureur_nom": "Camille Roussel",
+          "temps": "00:17.267",
+          "vitesse": 31.2
+        },
+        "17": {
+          "coureur_id": "coureur_3",
+          "coureur_nom": "Thomas Lefebvre",
+          "temps": "00:14.863",
+          "vitesse": 36.2
+        },
+        "18": {
+          "coureur_id": "coureur_4",
+          "coureur_nom": "Manon Girard",
+          "temps": "00:17.486",
+          "vitesse": 30.8
+        }
+      },
+      "par_coureur": {
+        "coureur_1": {
+          "meilleur": {
+            "temps": "00:15.353",
+            "vitesse": 35.1
+          },
+          "moyenne": {
+            "temps": "00:15.476",
+            "vitesse": 34.8
+          }
+        },
+        "coureur_2": {
+          "meilleur": {
+            "temps": "00:17.243",
+            "vitesse": 31.2
+          },
+          "moyenne": {
+            "temps": "00:17.432",
+            "vitesse": 30.9
+          }
+        },
+        "coureur_3": {
+          "meilleur": {
+            "temps": "00:14.863",
+            "vitesse": 36.2
+          },
+          "moyenne": {
+            "temps": "00:15.189",
+            "vitesse": 35.4
+          }
+        },
+        "coureur_4": {
+          "meilleur": {
+            "temps": "00:17.486",
+            "vitesse": 30.8
+          },
+          "moyenne": {
+            "temps": "00:17.806",
+            "vitesse": 30.2
+          }
+        },
+        "coureur_5": {
+          "meilleur": {
+            "temps": "00:16.646",
+            "vitesse": 32.3
+          },
+          "moyenne": {
+            "temps": "00:16.680",
+            "vitesse": 32.3
+          }
+        },
+        "coureur_6": {
+          "meilleur": {
+            "temps": "00:16.293",
+            "vitesse": 33.0
+          },
+          "moyenne": {
+            "temps": "00:16.330",
+            "vitesse": 33.0
+          }
+        },
+        "coureur_7": {
+          "meilleur": {
+            "temps": "00:17.668",
+            "vitesse": 30.5
+          },
+          "moyenne": {
+            "temps": "00:17.727",
+            "vitesse": 30.4
+          }
+        }
+      }
+    },
+    "S5": {
+      "id": "S5",
+      "nom": "Ligne des Hunaudières",
+      "longueur_km": 0.207,
+      "meilleur_equipe": {
+        "coureur_id": "coureur_1",
+        "coureur_nom": "Julien Berthier",
+        "temps": "00:22.020",
+        "vitesse": 33.8
+      },
+      "moyenne_equipe": {
+        "temps": "00:23.239",
+        "vitesse": 32.1
+      },
+      "par_relais": {
+        "1": {
+          "coureur_id": "coureur_1",
+          "coureur_nom": "Julien Berthier",
+          "temps": "00:22.065",
+          "vitesse": 33.8
+        },
+        "2": {
+          "coureur_id": "coureur_2",
+          "coureur_nom": "Camille Roussel",
+          "temps": "00:23.880",
+          "vitesse": 31.2
+        },
+        "3": {
+          "coureur_id": "coureur_3",
+          "coureur_nom": "Thomas Lefebvre",
+          "temps": "00:23.358",
+          "vitesse": 31.9
+        },
+        "4": {
+          "coureur_id": "coureur_4",
+          "coureur_nom": "Manon Girard",
+          "temps": "00:25.014",
+          "vitesse": 29.8
+        },
+        "5": {
+          "coureur_id": "coureur_5",
+          "coureur_nom": "Antoine Petit",
+          "temps": "00:23.335",
+          "vitesse": 31.9
+        },
+        "6": {
+          "coureur_id": "coureur_6",
+          "coureur_nom": "Léa Fontaine",
+          "temps": "00:23.553",
+          "vitesse": 31.6
+        },
+        "7": {
+          "coureur_id": "coureur_7",
+          "coureur_nom": "Nicolas Marchand",
+          "temps": "00:23.620",
+          "vitesse": 31.6
+        },
+        "8": {
+          "coureur_id": "coureur_1",
+          "coureur_nom": "Julien Berthier",
+          "temps": "00:22.020",
+          "vitesse": 33.8
+        },
+        "9": {
+          "coureur_id": "coureur_2",
+          "coureur_nom": "Camille Roussel",
+          "temps": "00:23.107",
+          "vitesse": 32.2
+        },
+        "10": {
+          "coureur_id": "coureur_3",
+          "coureur_nom": "Thomas Lefebvre",
+          "temps": "00:22.689",
+          "vitesse": 32.8
+        },
+        "11": {
+          "coureur_id": "coureur_4",
+          "coureur_nom": "Manon Girard",
+          "temps": "00:23.840",
+          "vitesse": 31.3
+        },
+        "12": {
+          "coureur_id": "coureur_5",
+          "coureur_nom": "Antoine Petit",
+          "temps": "00:23.436",
+          "vitesse": 31.8
+        },
+        "13": {
+          "coureur_id": "coureur_6",
+          "coureur_nom": "Léa Fontaine",
+          "temps": "00:23.414",
+          "vitesse": 31.8
+        },
+        "14": {
+          "coureur_id": "coureur_7",
+          "coureur_nom": "Nicolas Marchand",
+          "temps": "00:23.384",
+          "vitesse": 31.9
+        },
+        "15": {
+          "coureur_id": "coureur_1",
+          "coureur_nom": "Julien Berthier",
+          "temps": "00:22.345",
+          "vitesse": 33.3
+        },
+        "16": {
+          "coureur_id": "coureur_2",
+          "coureur_nom": "Camille Roussel",
+          "temps": "00:23.230",
+          "vitesse": 32.1
+        },
+        "17": {
+          "coureur_id": "coureur_3",
+          "coureur_nom": "Thomas Lefebvre",
+          "temps": "00:22.231",
+          "vitesse": 33.5
+        },
+        "18": {
+          "coureur_id": "coureur_4",
+          "coureur_nom": "Manon Girard",
+          "temps": "00:23.785",
+          "vitesse": 31.3
+        }
+      },
+      "par_coureur": {
+        "coureur_1": {
+          "meilleur": {
+            "temps": "00:22.020",
+            "vitesse": 33.8
+          },
+          "moyenne": {
+            "temps": "00:22.143",
+            "vitesse": 33.7
+          }
+        },
+        "coureur_2": {
+          "meilleur": {
+            "temps": "00:23.107",
+            "vitesse": 32.2
+          },
+          "moyenne": {
+            "temps": "00:23.406",
+            "vitesse": 31.8
+          }
+        },
+        "coureur_3": {
+          "meilleur": {
+            "temps": "00:22.231",
+            "vitesse": 33.5
+          },
+          "moyenne": {
+            "temps": "00:22.759",
+            "vitesse": 32.7
+          }
+        },
+        "coureur_4": {
+          "meilleur": {
+            "temps": "00:23.785",
+            "vitesse": 31.3
+          },
+          "moyenne": {
+            "temps": "00:24.213",
+            "vitesse": 30.8
+          }
+        },
+        "coureur_5": {
+          "meilleur": {
+            "temps": "00:23.335",
+            "vitesse": 31.9
+          },
+          "moyenne": {
+            "temps": "00:23.385",
+            "vitesse": 31.9
+          }
+        },
+        "coureur_6": {
+          "meilleur": {
+            "temps": "00:23.414",
+            "vitesse": 31.8
+          },
+          "moyenne": {
+            "temps": "00:23.483",
+            "vitesse": 31.7
+          }
+        },
+        "coureur_7": {
+          "meilleur": {
+            "temps": "00:23.384",
+            "vitesse": 31.9
+          },
+          "moyenne": {
+            "temps": "00:23.502",
+            "vitesse": 31.7
+          }
+        }
+      }
+    },
+    "S6": {
+      "id": "S6",
+      "nom": "Chicane Playstation",
+      "longueur_km": 0.115,
+      "meilleur_equipe": {
+        "coureur_id": "coureur_3",
+        "coureur_nom": "Thomas Lefebvre",
+        "temps": "00:11.676",
+        "vitesse": 35.5
+      },
+      "moyenne_equipe": {
+        "temps": "00:12.839",
+        "vitesse": 32.2
+      },
+      "par_relais": {
+        "1": {
+          "coureur_id": "coureur_1",
+          "coureur_nom": "Julien Berthier",
+          "temps": "00:11.763",
+          "vitesse": 35.2
+        },
+        "2": {
+          "coureur_id": "coureur_2",
+          "coureur_nom": "Camille Roussel",
+          "temps": "00:13.807",
+          "vitesse": 30.0
+        },
+        "3": {
+          "coureur_id": "coureur_3",
+          "coureur_nom": "Thomas Lefebvre",
+          "temps": "00:12.208",
+          "vitesse": 33.9
+        },
+        "4": {
+          "coureur_id": "coureur_4",
+          "coureur_nom": "Manon Girard",
+          "temps": "00:14.635",
+          "vitesse": 28.3
+        },
+        "5": {
+          "coureur_id": "coureur_5",
+          "coureur_nom": "Antoine Petit",
+          "temps": "00:12.131",
+          "vitesse": 34.1
+        },
+        "6": {
+          "coureur_id": "coureur_6",
+          "coureur_nom": "Léa Fontaine",
+          "temps": "00:12.651",
+          "vitesse": 32.7
+        },
+        "7": {
+          "coureur_id": "coureur_7",
+          "coureur_nom": "Nicolas Marchand",
+          "temps": "00:13.847",
+          "vitesse": 29.9
+        },
+        "8": {
+          "coureur_id": "coureur_1",
+          "coureur_nom": "Julien Berthier",
+          "temps": "00:11.786",
+          "vitesse": 35.1
+        },
+        "9": {
+          "coureur_id": "coureur_2",
+          "coureur_nom": "Camille Roussel",
+          "temps": "00:13.261",
+          "vitesse": 31.2
+        },
+        "10": {
+          "coureur_id": "coureur_3",
+          "coureur_nom": "Thomas Lefebvre",
+          "temps": "00:11.898",
+          "vitesse": 34.8
+        },
+        "11": {
+          "coureur_id": "coureur_4",
+          "coureur_nom": "Manon Girard",
+          "temps": "00:13.831",
+          "vitesse": 29.9
+        },
+        "12": {
+          "coureur_id": "coureur_5",
+          "coureur_nom": "Antoine Petit",
+          "temps": "00:12.187",
+          "vitesse": 34.0
+        },
+        "13": {
+          "coureur_id": "coureur_6",
+          "coureur_nom": "Léa Fontaine",
+          "temps": "00:12.637",
+          "vitesse": 32.8
+        },
+        "14": {
+          "coureur_id": "coureur_7",
+          "coureur_nom": "Nicolas Marchand",
+          "temps": "00:13.800",
+          "vitesse": 30.0
+        },
+        "15": {
+          "coureur_id": "coureur_1",
+          "coureur_nom": "Julien Berthier",
+          "temps": "00:11.893",
+          "vitesse": 34.8
+        },
+        "16": {
+          "coureur_id": "coureur_2",
+          "coureur_nom": "Camille Roussel",
+          "temps": "00:13.315",
+          "vitesse": 31.1
+        },
+        "17": {
+          "coureur_id": "coureur_3",
+          "coureur_nom": "Thomas Lefebvre",
+          "temps": "00:11.676",
+          "vitesse": 35.5
+        },
+        "18": {
+          "coureur_id": "coureur_4",
+          "coureur_nom": "Manon Girard",
+          "temps": "00:13.769",
+          "vitesse": 30.1
+        }
+      },
+      "par_coureur": {
+        "coureur_1": {
+          "meilleur": {
+            "temps": "00:11.763",
+            "vitesse": 35.2
+          },
+          "moyenne": {
+            "temps": "00:11.814",
+            "vitesse": 35.0
+          }
+        },
+        "coureur_2": {
+          "meilleur": {
+            "temps": "00:13.261",
+            "vitesse": 31.2
+          },
+          "moyenne": {
+            "temps": "00:13.461",
+            "vitesse": 30.8
+          }
+        },
+        "coureur_3": {
+          "meilleur": {
+            "temps": "00:11.676",
+            "vitesse": 35.5
+          },
+          "moyenne": {
+            "temps": "00:11.927",
+            "vitesse": 34.7
+          }
+        },
+        "coureur_4": {
+          "meilleur": {
+            "temps": "00:13.769",
+            "vitesse": 30.1
+          },
+          "moyenne": {
+            "temps": "00:14.078",
+            "vitesse": 29.4
+          }
+        },
+        "coureur_5": {
+          "meilleur": {
+            "temps": "00:12.131",
+            "vitesse": 34.1
+          },
+          "moyenne": {
+            "temps": "00:12.159",
+            "vitesse": 34.0
+          }
+        },
+        "coureur_6": {
+          "meilleur": {
+            "temps": "00:12.637",
+            "vitesse": 32.8
+          },
+          "moyenne": {
+            "temps": "00:12.644",
+            "vitesse": 32.7
+          }
+        },
+        "coureur_7": {
+          "meilleur": {
+            "temps": "00:13.800",
+            "vitesse": 30.0
+          },
+          "moyenne": {
+            "temps": "00:13.823",
+            "vitesse": 29.9
+          }
+        }
+      }
+    },
+    "S7": {
+      "id": "S7",
+      "nom": "Virage Michelin",
+      "longueur_km": 0.138,
+      "meilleur_equipe": {
+        "coureur_id": "coureur_3",
+        "coureur_nom": "Thomas Lefebvre",
+        "temps": "00:13.600",
+        "vitesse": 36.5
+      },
+      "moyenne_equipe": {
+        "temps": "00:15.215",
+        "vitesse": 32.7
+      },
+      "par_relais": {
+        "1": {
+          "coureur_id": "coureur_1",
+          "coureur_nom": "Julien Berthier",
+          "temps": "00:14.425",
+          "vitesse": 34.4
+        },
+        "2": {
+          "coureur_id": "coureur_2",
+          "coureur_nom": "Camille Roussel",
+          "temps": "00:16.987",
+          "vitesse": 29.2
+        },
+        "3": {
+          "coureur_id": "coureur_3",
+          "coureur_nom": "Thomas Lefebvre",
+          "temps": "00:14.314",
+          "vitesse": 34.7
+        },
+        "4": {
+          "coureur_id": "coureur_4",
+          "coureur_nom": "Manon Girard",
+          "temps": "00:16.411",
+          "vitesse": 30.3
+        },
+        "5": {
+          "coureur_id": "coureur_5",
+          "coureur_nom": "Antoine Petit",
+          "temps": "00:14.852",
+          "vitesse": 33.5
+        },
+        "6": {
+          "coureur_id": "coureur_6",
+          "coureur_nom": "Léa Fontaine",
+          "temps": "00:15.266",
+          "vitesse": 32.5
+        },
+        "7": {
+          "coureur_id": "coureur_7",
+          "coureur_nom": "Nicolas Marchand",
+          "temps": "00:15.704",
+          "vitesse": 31.6
+        },
+        "8": {
+          "coureur_id": "coureur_1",
+          "coureur_nom": "Julien Berthier",
+          "temps": "00:14.259",
+          "vitesse": 34.8
+        },
+        "9": {
+          "coureur_id": "coureur_2",
+          "coureur_nom": "Camille Roussel",
+          "temps": "00:16.298",
+          "vitesse": 30.5
+        },
+        "10": {
+          "coureur_id": "coureur_3",
+          "coureur_nom": "Thomas Lefebvre",
+          "temps": "00:13.900",
+          "vitesse": 35.7
+        },
+        "11": {
+          "coureur_id": "coureur_4",
+          "coureur_nom": "Manon Girard",
+          "temps": "00:15.635",
+          "vitesse": 31.8
+        },
+        "12": {
+          "coureur_id": "coureur_5",
+          "coureur_nom": "Antoine Petit",
+          "temps": "00:14.961",
+          "vitesse": 33.2
+        },
+        "13": {
+          "coureur_id": "coureur_6",
+          "coureur_nom": "Léa Fontaine",
+          "temps": "00:15.124",
+          "vitesse": 32.8
+        },
+        "14": {
+          "coureur_id": "coureur_7",
+          "coureur_nom": "Nicolas Marchand",
+          "temps": "00:15.429",
+          "vitesse": 32.2
+        },
+        "15": {
+          "coureur_id": "coureur_1",
+          "coureur_nom": "Julien Berthier",
+          "temps": "00:14.560",
+          "vitesse": 34.1
+        },
+        "16": {
+          "coureur_id": "coureur_2",
+          "coureur_nom": "Camille Roussel",
+          "temps": "00:16.531",
+          "vitesse": 30.1
+        },
+        "17": {
+          "coureur_id": "coureur_3",
+          "coureur_nom": "Thomas Lefebvre",
+          "temps": "00:13.600",
+          "vitesse": 36.5
+        },
+        "18": {
+          "coureur_id": "coureur_4",
+          "coureur_nom": "Manon Girard",
+          "temps": "00:15.610",
+          "vitesse": 31.8
+        }
+      },
+      "par_coureur": {
+        "coureur_1": {
+          "meilleur": {
+            "temps": "00:14.259",
+            "vitesse": 34.8
+          },
+          "moyenne": {
+            "temps": "00:14.414",
+            "vitesse": 34.5
+          }
+        },
+        "coureur_2": {
+          "meilleur": {
+            "temps": "00:16.298",
+            "vitesse": 30.5
+          },
+          "moyenne": {
+            "temps": "00:16.605",
+            "vitesse": 29.9
+          }
+        },
+        "coureur_3": {
+          "meilleur": {
+            "temps": "00:13.600",
+            "vitesse": 36.5
+          },
+          "moyenne": {
+            "temps": "00:13.938",
+            "vitesse": 35.6
+          }
+        },
+        "coureur_4": {
+          "meilleur": {
+            "temps": "00:15.610",
+            "vitesse": 31.8
+          },
+          "moyenne": {
+            "temps": "00:15.885",
+            "vitesse": 31.3
+          }
+        },
+        "coureur_5": {
+          "meilleur": {
+            "temps": "00:14.852",
+            "vitesse": 33.5
+          },
+          "moyenne": {
+            "temps": "00:14.906",
+            "vitesse": 33.3
+          }
+        },
+        "coureur_6": {
+          "meilleur": {
+            "temps": "00:15.124",
+            "vitesse": 32.8
+          },
+          "moyenne": {
+            "temps": "00:15.195",
+            "vitesse": 32.7
+          }
+        },
+        "coureur_7": {
+          "meilleur": {
+            "temps": "00:15.429",
+            "vitesse": 32.2
+          },
+          "moyenne": {
+            "temps": "00:15.566",
+            "vitesse": 31.9
+          }
+        }
+      }
+    },
+    "S8": {
+      "id": "S8",
+      "nom": "Arche d'arrivée",
+      "longueur_km": 0.138,
+      "meilleur_equipe": {
+        "coureur_id": "coureur_3",
+        "coureur_nom": "Thomas Lefebvre",
+        "temps": "00:13.670",
+        "vitesse": 36.3
+      },
+      "moyenne_equipe": {
+        "temps": "00:15.142",
+        "vitesse": 32.8
+      },
+      "par_relais": {
+        "1": {
+          "coureur_id": "coureur_1",
+          "coureur_nom": "Julien Berthier",
+          "temps": "00:14.830",
+          "vitesse": 33.5
+        },
+        "2": {
+          "coureur_id": "coureur_2",
+          "coureur_nom": "Camille Roussel",
+          "temps": "00:15.679",
+          "vitesse": 31.7
+        },
+        "3": {
+          "coureur_id": "coureur_3",
+          "coureur_nom": "Thomas Lefebvre",
+          "temps": "00:14.274",
+          "vitesse": 34.8
+        },
+        "4": {
+          "coureur_id": "coureur_4",
+          "coureur_nom": "Manon Girard",
+          "temps": "00:16.660",
+          "vitesse": 29.8
+        },
+        "5": {
+          "coureur_id": "coureur_5",
+          "coureur_nom": "Antoine Petit",
+          "temps": "00:14.887",
+          "vitesse": 33.4
+        },
+        "6": {
+          "coureur_id": "coureur_6",
+          "coureur_nom": "Léa Fontaine",
+          "temps": "00:15.026",
+          "vitesse": 33.1
+        },
+        "7": {
+          "coureur_id": "coureur_7",
+          "coureur_nom": "Nicolas Marchand",
+          "temps": "00:16.015",
+          "vitesse": 31.0
+        },
+        "8": {
+          "coureur_id": "coureur_1",
+          "coureur_nom": "Julien Berthier",
+          "temps": "00:14.748",
+          "vitesse": 33.7
+        },
+        "9": {
+          "coureur_id": "coureur_2",
+          "coureur_nom": "Camille Roussel",
+          "temps": "00:14.975",
+          "vitesse": 33.2
+        },
+        "10": {
+          "coureur_id": "coureur_3",
+          "coureur_nom": "Thomas Lefebvre",
+          "temps": "00:13.857",
+          "vitesse": 35.9
+        },
+        "11": {
+          "coureur_id": "coureur_4",
+          "coureur_nom": "Manon Girard",
+          "temps": "00:15.893",
+          "vitesse": 31.3
+        },
+        "12": {
+          "coureur_id": "coureur_5",
+          "coureur_nom": "Antoine Petit",
+          "temps": "00:15.049",
+          "vitesse": 33.0
+        },
+        "13": {
+          "coureur_id": "coureur_6",
+          "coureur_nom": "Léa Fontaine",
+          "temps": "00:14.969",
+          "vitesse": 33.2
+        },
+        "14": {
+          "coureur_id": "coureur_7",
+          "coureur_nom": "Nicolas Marchand",
+          "temps": "00:16.050",
+          "vitesse": 31.0
+        },
+        "15": {
+          "coureur_id": "coureur_1",
+          "coureur_nom": "Julien Berthier",
+          "temps": "00:14.992",
+          "vitesse": 33.1
+        },
+        "16": {
+          "coureur_id": "coureur_2",
+          "coureur_nom": "Camille Roussel",
+          "temps": "00:15.170",
+          "vitesse": 32.7
+        },
+        "17": {
+          "coureur_id": "coureur_3",
+          "coureur_nom": "Thomas Lefebvre",
+          "temps": "00:13.670",
+          "vitesse": 36.3
+        },
+        "18": {
+          "coureur_id": "coureur_4",
+          "coureur_nom": "Manon Girard",
+          "temps": "00:15.808",
+          "vitesse": 31.4
+        }
+      },
+      "par_coureur": {
+        "coureur_1": {
+          "meilleur": {
+            "temps": "00:14.748",
+            "vitesse": 33.7
+          },
+          "moyenne": {
+            "temps": "00:14.857",
+            "vitesse": 33.4
+          }
+        },
+        "coureur_2": {
+          "meilleur": {
+            "temps": "00:14.975",
+            "vitesse": 33.2
+          },
+          "moyenne": {
+            "temps": "00:15.275",
+            "vitesse": 32.5
+          }
+        },
+        "coureur_3": {
+          "meilleur": {
+            "temps": "00:13.670",
+            "vitesse": 36.3
+          },
+          "moyenne": {
+            "temps": "00:13.934",
+            "vitesse": 35.7
+          }
+        },
+        "coureur_4": {
+          "meilleur": {
+            "temps": "00:15.808",
+            "vitesse": 31.4
+          },
+          "moyenne": {
+            "temps": "00:16.120",
+            "vitesse": 30.8
+          }
+        },
+        "coureur_5": {
+          "meilleur": {
+            "temps": "00:14.887",
+            "vitesse": 33.4
+          },
+          "moyenne": {
+            "temps": "00:14.968",
+            "vitesse": 33.2
+          }
+        },
+        "coureur_6": {
+          "meilleur": {
+            "temps": "00:14.969",
+            "vitesse": 33.2
+          },
+          "moyenne": {
+            "temps": "00:14.997",
+            "vitesse": 33.1
+          }
+        },
+        "coureur_7": {
+          "meilleur": {
+            "temps": "00:16.015",
+            "vitesse": 31.0
+          },
+          "moyenne": {
+            "temps": "00:16.032",
+            "vitesse": 31.0
+          }
+        }
+      }
+    }
+  }
+}

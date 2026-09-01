@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>24 Heures Vélo du Mans — Tableau de bord d'équipe</title>
+
+<!-- Polices : condensé "scoreboard" pour les chiffres, Inter pour le reste -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Tailwind CSS via CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          bg: '#0e1013',
+          surface: '#161b21',
+          surface2: '#1d242c',
+          border: '#262e37',
+          muted: '#8b94a0',
+          amber: '#f2a93b',
+          signal: '#3ecf8e',
+        },
+        fontFamily: {
+          display: ['"Big Shoulders Display"', 'sans-serif'],
+          sans: ['Inter', 'system-ui', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+
+<!-- Chart.js via CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-bg text-white antialiased">
+
+  <!-- ===================================================================
+       HERO — Nom de l'équipe + KPIs globaux
+       =================================================================== -->
+  <header class="tarmac border-b border-border">
+    <div class="max-w-6xl mx-auto px-6 pt-14 pb-10 sm:pt-20 sm:pb-14">
+      <p class="text-sm text-muted mb-3">24 Heures Vélo du Mans</p>
+      <h1 id="team-name" class="font-display font-extrabold text-5xl sm:text-7xl leading-[0.95] mb-10">
+        Chargement…
+      </h1>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-border border-t border-border">
+        <div class="py-6 sm:pr-8">
+          <p id="kpi-tours-value" class="font-display font-bold text-5xl text-amber leading-none">—</p>
+          <p class="text-sm text-muted mt-2">Tours parcourus</p>
+        </div>
+        <div class="py-6 sm:px-8">
+          <p id="kpi-km-value" class="font-display font-bold text-5xl text-amber leading-none">—</p>
+          <p class="text-sm text-muted mt-2">Kilomètres cumulés</p>
+        </div>
+        <div class="py-6 sm:pl-8">
+          <p id="kpi-temps-value" class="font-display font-bold text-5xl text-amber leading-none">—</p>
+          <p class="text-sm text-muted mt-2">Temps de course</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6">
+
+    <!-- =================================================================
+         GRAPHIQUES ÉQUIPE
+         ================================================================= -->
+    <section class="py-14" aria-labelledby="titre-graphiques">
+      <h2 id="titre-graphiques" class="font-display font-bold text-2xl mb-6">Rythme de course</h2>
+
+      <div class="bg-surface border border-border rounded p-5 mb-6">
+        <p class="text-sm text-muted mb-4">Tours effectués par heure, toute l'équipe confondue</p>
+        <div class="h-64">
+          <canvas id="chart-tours-heure"></canvas>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-surface border border-border rounded p-5">
+          <p class="text-sm text-muted mb-4">Temps total couru par coureur</p>
+          <div class="h-64">
+            <canvas id="chart-temps-coureur"></canvas>
+          </div>
+        </div>
+        <div class="bg-surface border border-border rounded p-5">
+          <p class="text-sm text-muted mb-4">Tours effectués par coureur</p>
+          <div class="h-64">
+            <canvas id="chart-tours-coureur"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         L'ÉQUIPE
+         ================================================================= -->
+    <section class="py-14 border-t border-border" aria-labelledby="titre-equipe">
+      <h2 id="titre-equipe" class="font-display font-bold text-2xl mb-6">L'équipe</h2>
+      <div id="team-cards-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Cartes coureurs injectées par app.js -->
+      </div>
+    </section>
+
+    <!-- =================================================================
+         CARTE INTERACTIVE DU CIRCUIT
+         ================================================================= -->
+    <section class="py-14 border-t border-border" aria-labelledby="titre-circuit">
+      <h2 id="titre-circuit" class="font-display font-bold text-2xl mb-2">Carte du circuit</h2>
+      <p class="text-sm text-muted mb-6">Survolez un segment pour voir ses temps et vitesses. Filtrez par coureur ou par relais pour affiner la lecture.</p>
+
+      <div class="flex flex-col sm:flex-row gap-3 mb-6">
+        <select id="filter-coureur" class="bg-surface2 border border-border rounded px-3 py-2 text-sm w-full sm:w-auto">
+          <option value="tous">Toute l'équipe</option>
+        </select>
+        <select id="filter-relais" class="bg-surface2 border border-border rounded px-3 py-2 text-sm w-full sm:w-auto">
+          <option value="tous">Tous les relais</option>
+        </select>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
+
+        <div class="lg:col-span-2 bg-surface border border-border rounded p-4">
+          <svg viewBox="0 0 1000 600" class="w-full h-auto" role="img" aria-label="Tracé du circuit découpé en huit segments">
+
+            <!-- Segments interactifs (huit tronçons du circuit) -->
+            <path class="circuit-segment" data-segment-id="S1" tabindex="0" aria-label="Segment Ligne des stands"
+                  d="M150,500 L700,500" />
+            <path class="circuit-segment" data-segment-id="S2" tabindex="0" aria-label="Segment Virage Dunlop"
+                  d="M700,500 C760,500 820,470 850,430" />
+            <path class="circuit-segment" data-segment-id="S3" tabindex="0" aria-label="Segment Les Esses"
+                  d="M850,430 C880,390 800,360 830,320 C860,280 780,270 760,230" />
+            <path class="circuit-segment" data-segment-id="S4" tabindex="0" aria-label="Segment Garage Vert"
+                  d="M760,230 C720,190 660,160 620,150" />
+            <path class="circuit-segment" data-segment-id="S5" tabindex="0" aria-label="Segment Ligne des Hunaudières"
+                  d="M620,150 C500,145 400,142 280,140" />
+            <path class="circuit-segment" data-segment-id="S6" tabindex="0" aria-label="Segment Chicane Playstation"
+                  d="M280,140 L250,175 L215,145 L190,190 L150,230" />
+            <path class="circuit-segment" data-segment-id="S7" tabindex="0" aria-label="Segment Virage Michelin"
+                  d="M150,230 C120,270 100,320 110,380" />
+            <path class="circuit-segment" data-segment-id="S8" tabindex="0" aria-label="Segment Arche d'arrivée"
+                  d="M110,380 C115,430 120,470 150,500" />
+
+            <!-- Ligne centrale décorative (non interactive) -->
+            <path class="circuit-segment-line" d="M150,500 L700,500" />
+            <path class="circuit-segment-line" d="M700,500 C760,500 820,470 850,430" />
+            <path class="circuit-segment-line" d="M850,430 C880,390 800,360 830,320 C860,280 780,270 760,230" />
+            <path class="circuit-segment-line" d="M760,230 C720,190 660,160 620,150" />
+            <path class="circuit-segment-line" d="M620,150 C500,145 400,142 280,140" />
+            <path class="circuit-segment-line" d="M280,140 L250,175 L215,145 L190,190 L150,230" />
+            <path class="circuit-segment-line" d="M150,230 C120,270 100,320 110,380" />
+            <path class="circuit-segment-line" d="M110,380 C115,430 120,470 150,500" />
+
+            <!-- Ligne de départ / arrivée -->
+            <line x1="150" y1="486" x2="150" y2="514" stroke="#edeff2" stroke-width="4" />
+          </svg>
+        </div>
+
+        <div id="circuit-tooltip" class="bg-surface2 border border-border rounded p-5 min-h-[10rem]">
+          <p class="tooltip-hint">Survolez un segment du circuit pour afficher ses temps.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-border py-8">
+    <p class="max-w-6xl mx-auto px-6 text-sm text-muted">Édition maison — données de course consignées relais par relais.</p>
+  </footer>
+
+  <!-- ===================================================================
+       MODAL — Fiche individuelle d'un coureur
+       =================================================================== -->
+  <div id="coureur-modal" data-state="closed" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70" role="dialog" aria-modal="true" aria-labelledby="modal-coureur-name">
+    <div class="modal-panel bg-surface border border-border rounded max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8">
+      <div class="flex items-start justify-between mb-6">
+        <h3 id="modal-coureur-name" class="font-display font-bold text-3xl">—</h3>
+        <button id="modal-close" aria-label="Fermer la fiche" class="text-muted hover:text-white text-2xl leading-none px-2">×</button>
+      </div>
+
+      <div id="modal-kpis" class="grid grid-cols-3 gap-4 mb-8 pb-8 border-b border-border">
+        <!-- KPIs injectés par app.js -->
+      </div>
+
+      <div class="mb-8">
+        <p class="text-sm text-muted mb-4">Évolution des temps au tour</p>
+        <div class="h-56">
+          <canvas id="chart-coureur-tours"></canvas>
+        </div>
+      </div>
+
+      <div>
+        <p class="text-sm text-muted mb-4">Détail par relais</p>
+        <div id="modal-relais-list" class="space-y-3">
+          <!-- Cartes relais injectées par app.js -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="chart-config.js"></script>
+  <script src="circuit.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+/* =========================================================================
+   Design tokens
+   ========================================================================= */
+:root {
+  --bg: #0e1013;
+  --surface: #161b21;
+  --surface-2: #1d242c;
+  --border: #262e37;
+  --text: #edeff2;
+  --text-muted: #8b94a0;
+  --amber: #f2a93b;
+  --amber-dim: #7a5a24;
+  --signal: #3ecf8e;
+  --red: #e4574a;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: 'Big Shoulders Display', 'Inter', sans-serif;
+}
+
+/* Fine grain texture on the hero, evokes tarmac without a stock photo */
+.tarmac {
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(242, 169, 59, 0.07), transparent 45%),
+    radial-gradient(circle at 85% 0%, rgba(62, 207, 142, 0.05), transparent 40%);
+}
+
+/* Custom scrollbar for webkit browsers, kept subtle */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: var(--amber-dim); }
+
+/* Visible keyboard focus everywhere, including on SVG segments */
+:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 3px;
+}
+
+/* =========================================================================
+   Circuit SVG
+   ========================================================================= */
+.circuit-segment {
+  fill: none;
+  stroke: #2a323c;
+  stroke-width: 26;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  cursor: pointer;
+  transition: stroke 0.15s ease, filter 0.15s ease;
+}
+
+.circuit-segment:hover,
+.circuit-segment.is-active {
+  stroke: var(--amber);
+  filter: drop-shadow(0 0 10px rgba(242, 169, 59, 0.45));
+}
+
+.circuit-segment-line {
+  fill: none;
+  stroke: var(--bg);
+  stroke-width: 2;
+  stroke-dasharray: 6 10;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.tooltip-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.tooltip-row:last-child { border-bottom: none; }
+
+.tooltip-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.tooltip-values {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 600;
+  font-size: 1.35rem;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.tooltip-unit {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--signal);
+}
+
+.tooltip-hint {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.tooltip-segment-name {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
+  color: var(--amber);
+  margin-bottom: 0.25rem;
+}
+
+/* =========================================================================
+   Modal (fiche coureur)
+   ========================================================================= */
+#coureur-modal {
+  transition: opacity 0.2s ease;
+}
+
+#coureur-modal .modal-panel {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+#coureur-modal[data-state="closed"] {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#coureur-modal[data-state="closed"] .modal-panel {
+  transform: translateY(12px) scale(0.98);
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  #coureur-modal,
+  #coureur-modal .modal-panel,
+  .circuit-segment {
+    transition: none !important;
+  }
+}
