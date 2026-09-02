@@ -4,6 +4,7 @@
     "temps_total": "24:04:01",
     "tours_total": 182,
     "km_total": 761.67,
+    "vitesse_moyenne": 31.6,
     "longueur_circuit_km": 4.23,
     "tours_par_heure": [
       {
@@ -112,18 +113,28 @@
       "temps_total": "02:57:29",
       "tours_total": 22,
       "km_total": 92.4,
+      "meilleur_tour": "07:42:00",
+      "moyenne_meilleur_tour": 32.6,
       "relais": [
         {
           "numero": 1,
           "tours": 7,
           "meilleurs_segments": [
             {
-              "segment_id": "S3",
-              "temps": "00:11.550"
+              "segment_id": "S0",
+              "temps": "08:06 - 31.3 km/h"
             },
             {
-              "segment_id": "S6",
-              "temps": "00:11.763"
+              "segment_id": "S2",
+              "temps": "01:44 - 23.4 km/h"
+            },
+            {
+              "segment_id": "S3",
+              "temps": "21s - 43.1 km/h"
+            },
+            {
+              "segment_id": "S4",
+              "temps": "56s - 35.0 km/h"
             }
           ],
           "temps_moyen_tour": "08:56.00"
@@ -133,12 +144,16 @@
           "tours": 7,
           "meilleurs_segments": [
             {
-              "segment_id": "S3",
-              "temps": "00:11.563"
+              "segment_id": "S0",
+              "temps": "07:35 - 33.5 km/h"
             },
             {
-              "segment_id": "S6",
-              "temps": "00:11.786"
+              "segment_id": "S2",
+              "temps": "01:40 - 24.3 km/h"
+            },
+            {
+              "segment_id": "S3",
+              "temps": "16s - 56.6 km/h"
             }
           ],
           "temps_moyen_tour": "07:52.00"
@@ -148,12 +163,20 @@
           "tours": 8,
           "meilleurs_segments": [
             {
-              "segment_id": "S3",
-              "temps": "00:11.726"
+              "segment_id": "S0",
+              "temps": "07:43 - 32.9 km/h"
             },
             {
-              "segment_id": "S6",
-              "temps": "00:11.893"
+              "segment_id": "S2",
+              "temps": "01:52 - 21.7 km/h"
+            },
+            {
+              "segment_id": "S3",
+              "temps": "18s - 50.3 km/h"
+            },
+            {
+              "segment_id": "S4",
+              "temps": "52s - 37.7 km/h"
             }
           ],
           "temps_moyen_tour": "08:00.00"
@@ -257,6 +280,8 @@
       "temps_total": "02:57:27",
       "tours_total": 18,
       "km_total": 75.6,
+      "meilleur_tour": "08:45:00",
+      "moyenne_meilleur_tour": 28.7,
       "relais": [
         {
           "numero": 2,
@@ -384,6 +409,8 @@
       "prenom": "Matis",
       "nom": "Charrier",
       "temps_total": "04:06:05",
+      "meilleur_tour": "06:17:00",
+      "moyenne_meilleur_tour": 40,
       "tours_total": 36,
       "km_total": 151.2,
       "relais": [
@@ -600,6 +627,8 @@
       "prenom": "Corentin",
       "nom": "Bouchet",
       "temps_total": "02:53:02",
+      "meilleur_tour": "08:00:00",
+      "moyenne_meilleur_tour": 31.4,
       "tours_total": 20,
       "km_total": 84.0,
       "relais": [
@@ -717,6 +746,8 @@
       "prenom": "Baptiste",
       "nom": "Jayle",
       "temps_total": "03:07:40",
+      "meilleur_tour": "07:09:00",
+      "moyenne_meilleur_tour": 35.1,
       "tours_total": 23,
       "km_total": 96.6,
       "relais": [
@@ -843,6 +874,8 @@
       "prenom": "Baptiste",
       "nom": "Bech",
       "temps_total": "03:46:22",
+      "meilleur_tour": "06:46:00",
+      "moyenne_meilleur_tour": 37.1,
       "tours_total": 31,
       "km_total": 130.2,
       "relais": [
@@ -1005,6 +1038,8 @@
       "prenom": "Quentin",
       "nom": "Roulet",
       "temps_total": "03:48:32",
+      "meilleur_tour": "06:09:00",
+      "moyenne_meilleur_tour": 40.8,
       "tours_total": 33,
       "km_total": 138.6,
       "relais": [
@@ -1173,6 +1208,65 @@
     }
   ],
   "segments_stats": {
+    "S0":{
+      "id": "S0",
+      "nom": "Bugatti",
+      "longueur_km": 4.185,
+      "meilleur_equipe": {
+        "coureur_id": "coureur_7",
+        "coureur_nom": "Quentin Roulet",
+        "temps": "06:09.000",
+        "vitesse": 40
+      },
+      "moyenne_equipe": {
+        "temps": "01:07.100",
+        "vitesse": 32.2
+      },
+      "par_coureur": {
+        "coureur_1": {
+          "meilleur": {
+            "temps": "08:06.000",
+            "vitesse": 31.3
+          }
+        },
+        "coureur_2": {
+          "meilleur": {
+            "temps": "08:45.000",
+            "vitesse": 28.7
+          }
+        },
+        "coureur_3": {
+          "meilleur": {
+            "temps": "06:17.000",
+            "vitesse": 40
+          }
+        },
+        "coureur_4": {
+          "meilleur": {
+            "temps": "08:00.00",
+            "vitesse": 31.4
+          }
+        },
+        "coureur_5": {
+          "meilleur": {
+            "temps": "07:09.000",
+            "vitesse": 35.1
+          }
+        },
+        "coureur_6": {
+          "meilleur": {
+            "temps": "06:46.000",
+            "vitesse": 37.1
+          }
+        },
+        "coureur_7": {
+          "meilleur": {
+            "temps": "06:09.000",
+            "vitesse": 40.8
+          }
+        }
+      }
+    },
     "S1": {
       "id": "S1",
       "nom": "Ligne des stands",

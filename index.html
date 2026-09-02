@@ -17,13 +17,14 @@
     theme: {
       extend: {
         colors: {
-          bg: '#0e1013',
-          surface: '#161b21',
-          surface2: '#1d242c',
-          border: '#262e37',
-          muted: '#8b94a0',
-          amber: '#f2a93b',
-          signal: '#3ecf8e',
+          bg: 'var(--bg)',
+          surface: 'var(--surface)',
+          surface2: 'var(--surface-2)',
+          border: 'var(--border)',
+          text: 'var(--text)',
+          muted: 'var(--text-muted)',
+          amber: 'var(--amber)',
+          amberDim: 'var(--amber-dim)',
         },
         fontFamily: {
           display: ['"Big Shoulders Display"', 'sans-serif'],
@@ -47,23 +48,27 @@
        =================================================================== -->
   <header class="tarmac border-b border-border">
     <div class="max-w-6xl mx-auto px-6 pt-14 pb-10 sm:pt-20 sm:pb-14">
-      <p class="text-sm text-muted mb-3">24 Heures Vélo du Mans</p>
+      <p class="text-sm text mb-3">24 Heures Vélo du Mans</p>
       <h1 id="team-name" class="font-display font-extrabold text-5xl sm:text-7xl leading-[0.95] mb-10">
         Chargement…
       </h1>
 
-      <div class="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-border border-t border-border">
+      <div class="grid grid-cols-1 sm:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-border border-t border-border">
         <div class="py-6 sm:pr-8">
           <p id="kpi-tours-value" class="font-display font-bold text-5xl text-amber leading-none">—</p>
-          <p class="text-sm text-muted mt-2">Tours parcourus</p>
+          <p class="text-sm text mt-2">Tours parcourus</p>
         </div>
         <div class="py-6 sm:px-8">
           <p id="kpi-km-value" class="font-display font-bold text-5xl text-amber leading-none">—</p>
-          <p class="text-sm text-muted mt-2">Kilomètres cumulés</p>
+          <p class="text-sm text mt-2">Kilomètres cumulés</p>
         </div>
         <div class="py-6 sm:pl-8">
           <p id="kpi-temps-value" class="font-display font-bold text-5xl text-amber leading-none">—</p>
-          <p class="text-sm text-muted mt-2">Temps de course</p>
+          <p class="text-sm text mt-2">Temps de course</p>
+        </div>
+          <div class="py-6 sm:pl-8">
+          <p id="kpi-moyenne-value" class="font-display font-bold text-5xl text-amber leading-none">—</p>
+          <p class="text-sm text mt-2">Vitesse moyenne</p>
         </div>
       </div>
     </div>
@@ -115,7 +120,7 @@
          ================================================================= -->
     <section class="py-14 border-t border-border" aria-labelledby="titre-circuit">
       <h2 id="titre-circuit" class="font-display font-bold text-2xl mb-2">Carte du circuit</h2>
-      <p class="text-sm text-muted mb-6">Survolez un segment pour voir ses temps et vitesses.</p>
+      <p class="text-sm text-amber mb-6">Survolez un segment pour voir ses temps et vitesses.</p>
 
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
 
@@ -151,7 +156,7 @@
   </main>
 
   <footer class="border-t border-border py-8">
-    <p class="max-w-6xl mx-auto px-6 text-sm text-muted">Édition maison — données de course consignées relais par relais.</p>
+    <p class="max-w-6xl mx-auto px-6 text-sm text">Édition maison — données de course consignées relais par relais.</p>
   </footer>
 
   <!-- ===================================================================
@@ -161,7 +166,7 @@
     <div class="modal-panel bg-surface border border-border rounded max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8">
       <div class="flex items-start justify-between mb-6">
         <h3 id="modal-coureur-name" class="font-display font-bold text-3xl">—</h3>
-        <button id="modal-close" aria-label="Fermer la fiche" class="text-muted hover:text-white text-2xl leading-none px-2">×</button>
+        <button id="modal-close" aria-label="Fermer la fiche" class="text hover:text-white text-2xl leading-none px-2">×</button>
       </div>
 
       <div id="modal-kpis" class="grid grid-cols-3 gap-4 mb-8 pb-8 border-b border-border">

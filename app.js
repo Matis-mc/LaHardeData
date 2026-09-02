@@ -42,6 +42,7 @@ function renderKPIs(equipe) {
   document.getElementById('kpi-tours-value').textContent = equipe.tours_total;
   document.getElementById('kpi-km-value').textContent = `${equipe.km_total} km`;
   document.getElementById('kpi-temps-value').textContent = equipe.temps_total;
+  document.getElementById('kpi-moyenne-value').textContent = `${equipe.vitesse_moyenne} km/h`;
 }
 
 /** Construit les trois graphiques de la vue équipe. */
@@ -66,14 +67,14 @@ function carteCoureurHTML(c) {
   const initiales = `${c.prenom[0]}${c.nom[0]}`;
   return `
     <div class="bg-surface border border-border rounded p-5 flex items-center gap-4">
-      <div class="w-12 h-12 shrink-0 rounded-full bg-surface2 border border-border flex items-center justify-center font-display font-bold text-amber">
+      <div class="w-12 h-12 shrink-0 rounded-full bg border border-border flex items-center justify-center font-display font-bold text-muted">
         ${initiales}
       </div>
       <div class="flex-1 min-w-0">
-        <p class="font-medium truncate">${c.prenom} ${c.nom}</p>
+        <p class="font-medium truncate text-muted">${c.prenom} ${c.nom}</p>
         <p class="text-sm text-muted">${c.tours_total} tours · ${c.km_total} km</p>
       </div>
-      <button data-open-coureur="${c.id}" class="text-sm text-amber hover:underline shrink-0">Voir la fiche</button>
+      <button data-open-coureur="${c.id}" class="text-sm text-muted hover:underline shrink-0">Voir la fiche</button>
     </div>`;
 }
 
@@ -120,6 +121,10 @@ function renderFicheCoureur(coureur, data) {
     ${kpiFicheHTML(coureur.tours_total, 'Tours')}
     ${kpiFicheHTML(`${coureur.km_total} km`, 'Kilomètres')}
     ${kpiFicheHTML(coureur.temps_total, 'Temps couru')}
+    ${kpiFicheHTML(`${coureur.moyenne_meilleur_tour} km/h`, 'Moyenne du meilleur tour')}
+    ${kpiFicheHTML(coureur.meilleur_tour, 'Meilleur tour (temps officiel)')}
+
+
   `;
 
   document.getElementById('modal-relais-list').innerHTML =
@@ -146,8 +151,8 @@ function carteRelaisHTML(relais, data) {
 
   return `
     <div class="bg-surface2 border border-border rounded p-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6">
-      <p class="font-display font-bold text-lg w-24 shrink-0">Relais ${relais.numero}</p>
-      <p class="text-sm text-muted w-32 shrink-0">${relais.tours} tours · ${relais.temps_moyen_tour} / tour</p>
-      <p class="text-sm text-muted">Meilleurs segments : ${segments}</p>
+      <p class="font-display text-muted font-bold text-lg w-24 shrink-0">Relais ${relais.numero}</p>
+      <p class="text-sm text-muted w-64 shrink-0">${relais.tours} tours · ${relais.temps_moyen_tour} / tour</p>
+      <!--p class="text-sm text-muted">Meilleurs segments : ${segments}</p-->
     </div>`;
 }
