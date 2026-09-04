@@ -2,16 +2,18 @@
    Design tokens
    ========================================================================= */
 :root {
-  --bg: #380702;
-  --surface: #efd3c9;
-  --surface-2: #efd3c9;
-  --border: #efd3c9;
-  --text: #dc8d18;
-  --text-muted: #5a130b;
-  --amber: #f2a93b;
-  --amber-dim: #7a5a24;
-  --signal: #3ecf8e;
-  --red: #e4574a;
+  --bg: #6D2A31;
+  --bg-deep: #6D2A31;
+  --surface: #DBD2C3;
+  --surface-2: #DBD2C3;
+  --border: #DBD2C3;
+  --text: #DBD2C3;
+  --text-muted: #7c4650;
+  --ink: #321522;
+  --amber: #f2b544;
+  --amber-dim: #a77426;
+  --signal: #b53d4b;
+  --red: #b53d4b;
 }
 
 * {
@@ -24,25 +26,39 @@ html {
 
 body {
   background-color: var(--bg);
+  background-size: 22px 22px;
   color: var(--text);
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .font-display {
-  font-family: 'Big Shoulders Display', 'Inter', sans-serif;
+  font-family: 'League Spartan', sans-serif;
+  letter-spacing: 0.01em;
 }
 
 /* Fine grain texture on the hero, evokes tarmac without a stock photo */
 .tarmac {
   background-image:
-    radial-gradient(circle at 15% 20%, rgba(242, 169, 59, 0.07), transparent 45%),
-    radial-gradient(circle at 85% 0%, rgba(62, 207, 142, 0.05), transparent 40%);
+    linear-gradient(110deg, rgba(255, 248, 236, 0.08), transparent 38%),
+    repeating-linear-gradient(135deg, transparent 0 17px, rgba(255, 248, 236, 0.025) 17px 18px),
+    radial-gradient(circle at 85% 0%, rgba(242, 181, 68, 0.18), transparent 34%);
+  position: relative;
+}
+
+.tarmac::after {
+  content: '24 / 24';
+  position: absolute;
+  right: max(1.5rem, calc((100% - 72rem) / 2));
+  bottom: 1.25rem;
+  color: rgba(255, 248, 236, 0.22);
+  font: 700 0.7rem 'IBM Plex Sans', sans-serif;
+  letter-spacing: 0.2em;
 }
 
 /* Custom scrollbar for webkit browsers, kept subtle */
 ::-webkit-scrollbar { width: 10px; height: 10px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: var(--border); border-radius: 999px; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--amber-dim); }
 
 /* Visible keyboard focus everywhere, including on SVG segments */
@@ -56,7 +72,7 @@ body {
    ========================================================================= */
 .circuit-segment {
   fill: none;
-  stroke: #2a323c;
+  stroke: #900b1a;
   stroke-width: 26;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -67,7 +83,7 @@ body {
 .circuit-segment:hover,
 .circuit-segment.is-active {
   stroke: var(--amber);
-  filter: drop-shadow(0 0 10px rgba(242, 169, 59, 0.45));
+  filter: drop-shadow(0 0 10px rgba(242, 181, 68, 0.55));
 }
 
 .circuit-segment-line {
@@ -98,15 +114,15 @@ body {
   display: flex;
   align-items: baseline;
   gap: 0.5rem;
-  font-family: 'Big Shoulders Display', sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-weight: 600;
   font-size: 1.00rem;
-  color: var(--text);
+  color: var(--ink);
   white-space: nowrap;
 }
 
 .tooltip-unit {
-  font-family: 'Big Shoulders Display', sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-weight: 500;
   font-size: 1.10rem;
   color: var(--text-muted);
@@ -119,11 +135,37 @@ body {
 }
 
 .tooltip-segment-name {
-  font-family: 'Big Shoulders Display', sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-size: 1.05rem;
   letter-spacing: 0.01em;
   color: var(--amber);
   margin-bottom: 0.25rem;
+}
+
+main > section {
+  animation: rise-in 0.65s ease both;
+}
+
+main > section:nth-child(2) { animation-delay: 0.1s; }
+main > section:nth-child(3) { animation-delay: 0.18s; }
+
+main .bg-surface {
+  box-shadow: 8px 8px 0 rgba(48, 12, 25, 0.16);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+main .bg-surface:hover {
+  transform: translateY(-3px);
+  box-shadow: 10px 12px 0 rgba(48, 12, 25, 0.2);
+}
+
+@keyframes rise-in {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 640px) {
+  .tarmac::after { display: none; }
 }
 
 /* =========================================================================

@@ -12,12 +12,12 @@
  */
 
 const CHART_COLORS = {
-  amber: '#f2a93b',
-  amberSoft: 'rgba(242, 169, 59, 0.15)',
-  signal: '#3ecf8e',
-  signalSoft: 'rgba(62, 207, 142, 0.15)',
-  grid: 'rgba(139, 148, 160, 0.12)',
-  text: '#8b94a0',
+  amber: '#6D2A31',
+  amberSoft: 'rgba(181, 61, 75, 0.16)',
+  signal: '#f2b544',
+  signalSoft: 'rgba(242, 181, 68, 0.18)',
+  grid: 'rgba(124, 70, 80, 0.18)',
+  text: '#7c4650',
 };
 
 const PREFERS_REDUCED_MOTION =
@@ -25,15 +25,15 @@ const PREFERS_REDUCED_MOTION =
 
 /** Applique une base commune à tous les graphiques (police, couleurs, grille). */
 function initChartDefaults() {
-  Chart.defaults.font.family = "'Inter', system-ui, sans-serif";
+  Chart.defaults.font.family = "'IBM Plex Sans', sans-serif";
   Chart.defaults.color = CHART_COLORS.text;
   Chart.defaults.animation = PREFERS_REDUCED_MOTION ? false : { duration: 500 };
   Chart.defaults.plugins.legend.display = false;
-  Chart.defaults.plugins.tooltip.backgroundColor = '#1d242c';
-  Chart.defaults.plugins.tooltip.borderColor = '#262e37';
+  Chart.defaults.plugins.tooltip.backgroundColor = '#321522';
+  Chart.defaults.plugins.tooltip.borderColor = '#b53d4b';
   Chart.defaults.plugins.tooltip.borderWidth = 1;
   Chart.defaults.plugins.tooltip.padding = 10;
-  Chart.defaults.plugins.tooltip.titleFont = { family: "'Inter', system-ui, sans-serif", weight: '600' };
+  Chart.defaults.plugins.tooltip.titleFont = { family: "'IBM Plex Sans', sans-serif", weight: '600' };
 }
 
 /** Convertit "HH:MM:SS" en nombre d'heures décimal, pour positionner une barre. */
@@ -62,7 +62,7 @@ function buildToursParHeureChart(canvas, toursParHeure) {
   const valeurs = toursParHeure.map((h) => h.tours);
 
   return new Chart(canvas, {
-    type: 'line',
+    type: 'bar',
     data: {
       labels,
       datasets: [{
@@ -73,7 +73,7 @@ function buildToursParHeureChart(canvas, toursParHeure) {
         pointHoverRadius: 4,
         borderWidth: 2,
         fill: true,
-        tension: 0.75,
+        tension: 0,
       }],
     },
     options: {

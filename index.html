@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>24 Heures Vélo du Mans — Tableau de bord d'équipe</title>
 
-<!-- Polices : condensé "scoreboard" pour les chiffres, Inter pour le reste -->
+<!-- Polices : titres compacts pour les chiffres, grotesque éditorial pour le reste -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=League+Spartan:wght@500;600;700;800&display=swap" rel="stylesheet">
 
 <!-- Tailwind CSS via CDN -->
 <script src="https://cdn.tailwindcss.com"></script>
@@ -27,8 +27,8 @@
           amberDim: 'var(--amber-dim)',
         },
         fontFamily: {
-          display: ['"Big Shoulders Display"', 'sans-serif'],
-          sans: ['Inter', 'system-ui', 'sans-serif'],
+          display: ['"League Spartan"', 'sans-serif'],
+          sans: ['"IBM Plex Sans"', 'sans-serif'],
         },
       },
     },
@@ -48,10 +48,16 @@
        =================================================================== -->
   <header class="tarmac border-b border-border">
     <div class="max-w-6xl mx-auto px-6 pt-14 pb-10 sm:pt-20 sm:pb-14">
-      <p class="text-sm text mb-3">24 Heures Vélo du Mans</p>
-      <h1 id="team-name" class="font-display font-extrabold text-5xl sm:text-7xl leading-[0.95] mb-10">
-        Chargement…
-      </h1>
+      <div class="grid grid-cols-3 items-center mb-10">
+                <h1 id="team-name" class="font-display font-extrabold text-5xl sm:text-7xl leading-[0.95] text-right justify-self-end">
+          Chargement…
+        </h1>
+        <img
+          src="logo.png"
+          alt="Logo de l'équipe"
+          class="w-24 h-24 justify-self-center object-contain" />
+        <h1 class="font-display font-extrabold text-2xl sm:text-3xl leading-[0.95] text-right justify-self-end">24 Heures Vélo du Mans</h1>
+      </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-border border-t border-border">
         <div class="py-6 sm:pr-8">
@@ -165,7 +171,7 @@
   <div id="coureur-modal" data-state="closed" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70" role="dialog" aria-modal="true" aria-labelledby="modal-coureur-name">
     <div class="modal-panel bg-surface border border-border rounded max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8">
       <div class="flex items-start justify-between mb-6">
-        <h3 id="modal-coureur-name" class="font-display font-bold text-3xl">—</h3>
+        <h3 id="modal-coureur-name" class="font-display font-bold text-3xl text-muted">—</h3>
         <button id="modal-close" aria-label="Fermer la fiche" class="text hover:text-white text-2xl leading-none px-2">×</button>
       </div>
 
